@@ -1,0 +1,44 @@
+{
+  "prochainsMatchs": [
+    {
+      "id": 1,
+      "date": "2024-03-15",
+      "heure": "15:00",
+      "competition": "Championnat National",
+      "domicile": "AS Bambé",
+      "exterieur": "Foullah Edifice",
+      "lieu": "Stade Municipal, Moundou"
+    },
+    {
+      "id": 2,
+      "date": "2024-03-22",
+      "heure": "16:30",
+      "competition": "Coupe du Tchad",
+      "domicile": "AS Bambé",
+      "exterieur": "Gazelle FC",
+      "lieu": "Stade Municipal, Moundou"
+    }
+  ],
+  "derniersResultats": [
+    {
+      "id": 1,
+      "date": "2024-03-10",
+      "competition": "Championnat National",
+      "domicile": "AS Bambé",
+      "scoreDomicile": 3,
+      "exterieur": "AS CotonTchad",
+      "scoreExterieur": 0,
+      "statut": "Terminé"
+    },
+    {
+      "id": 2,
+      "date": "2024-03-03",
+      "competition": "Championnat National",
+      "domicile": "Renaissance FC",
+      "scoreDomicile": 1,
+      "exterieur": "AS Bambé",
+      "scoreExterieur": 1,
+      "statut": "Terminé"
+    }
+  ]
+}

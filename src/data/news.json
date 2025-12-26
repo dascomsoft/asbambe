@@ -1,0 +1,22 @@
+{
+  "actualites": [
+    {
+      "id": 1,
+      "titre": "Victoire historique contre l'AS CotonTchad",
+      "date": "2024-03-10",
+      "categorie": "Match",
+      "resume": "L'AS Bambé s'impose 3-0 face au leader du championnat.",
+      "contenu": "Dans un match très attendu, les Verts de Moundou ont réalisé une performance exceptionnelle...",
+      "image": "/images/actualites/victoire-coton.jpg"
+    },
+    {
+      "id": 2,
+      "titre": "Signature d'un nouveau partenariat",
+      "date": "2024-03-05",
+      "categorie": "Club",
+      "resume": "La brasserie du Logone devient sponsor officiel.",
+      "contenu": "Le club est fier d'annoncer un nouveau partenariat stratégique...",
+      "image": "/images/actualites/partenariat.jpg"
+    }
+  ]
+}

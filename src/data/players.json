@@ -1,0 +1,60 @@
+{
+  "joueurs": [
+    {
+      "id": 1,
+      "nom": "Mahamat Nour",
+      "poste": "Gardien",
+      "numero": 1,
+      "age": 28,
+      "nationalite": "Tchadien",
+      "bio": "Gardien titulaire depuis 3 saisons. Ancien du Centre de Formation AS Bambé.",
+      "photo": "/images/joueurs/gardien1.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Abderamane Ali",
+      "poste": "Défenseur",
+      "numero": 4,
+      "age": 26,
+      "nationalite": "Tchadien",
+      "bio": "Capitaine de l'équipe. Pilier de la défense depuis 5 saisons.",
+      "photo": "/images/joueurs/defenseur1.jpg"
+    },
+    {
+      "id": 3,
+      "nom": "Haroun Djibrine",
+      "poste": "Milieu",
+      "numero": 8,
+      "age": 24,
+      "nationalite": "Tchadien",
+      "bio": "Moteur du milieu de terrain. Excellent passeur et buteur.",
+      "photo": "/images/joueurs/milieu1.jpg"
+    },
+    {
+      "id": 4,
+      "nom": "Issa Moussa",
+      "poste": "Attaquant",
+      "numero": 9,
+      "age": 25,
+      "nationalite": "Tchadien",
+      "bio": "Meilleur buteur du club avec 15 buts cette saison.",
+      "photo": "/images/joueurs/attaquant1.jpg"
+    }
+  ],
+  "staff": [
+    {
+      "id": 1,
+      "nom": "Khalil Ibrahim",
+      "role": "Entraîneur principal",
+      "experience": "10 ans",
+      "bio": "Ancien joueur professionnel. Entraîne l'AS Bambé depuis 2019."
+    },
+    {
+      "id": 2,
+      "nom": "Moussa Abakar",
+      "role": "Entraîneur adjoint",
+      "experience": "8 ans",
+      "bio": "Spécialiste de la préparation physique."
+    }
+  ]
+}
