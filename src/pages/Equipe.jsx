@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Users, Trophy, Target, BarChart3, Shield, Award, Crosshair, Zap, Heart, Star, Calendar, Flag, Activity, Target as TargetIcon, UserCheck } from 'lucide-react';
+import { Users, Trophy, Target, Shield, Award, Crosshair, Zap, Heart, Star, Calendar, Flag, Target as TargetIcon, UserCheck } from 'lucide-react';
 
 const Equipe = () => {
   const [activeTab, setActiveTab] = useState('joueurs');
@@ -50,38 +50,6 @@ const Equipe = () => {
     { id: 3, name: "Mme. Amina Mahamat", role: "Nutritionniste", experience: "6 ans", speciality: "Diététique sportive" }
   ];
 
-  // Statistiques de l'équipe
-  const teamStats = {
-    matchesPlayed: 15,
-    wins: 9,
-    draws: 4,
-    losses: 2,
-    goalsFor: 32,
-    goalsAgainst: 14,
-    goalDifference: 18,
-    cleanSheets: 7,
-    avgGoalsPerGame: 2.1,
-    possessionAvg: 58,
-    shotsPerGame: 14.2,
-    passAccuracy: 82
-  };
-
-  // Meilleurs buteurs
-  const topScorers = [
-    { name: "Issa Moussa", goals: 15, matches: 15, avg: 1.0 },
-    { name: "Moussa Abakar", goals: 9, matches: 14, avg: 0.64 },
-    { name: "Haroun Djibrine", goals: 8, matches: 15, avg: 0.53 },
-    { name: "Ahmat Djibrine", goals: 6, matches: 13, avg: 0.46 }
-  ];
-
-  // Meilleurs passeurs
-  const topAssists = [
-    { name: "Saleh Abakar", assists: 10, matches: 14 },
-    { name: "Haroun Djibrine", assists: 8, matches: 15 },
-    { name: "Adam Moussa", assists: 7, matches: 15 },
-    { name: "Moussa Abakar", assists: 6, matches: 14 }
-  ];
-
   // Position colors
   const positionColors = {
     "Gardien": "bg-blue-100 text-blue-800",
@@ -113,17 +81,17 @@ const Equipe = () => {
               <Users size={18} />
               <span className="font-medium">Effectif 2024</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Notre Équipe
               <span className="block text-yellow-300">Première & Staff</span>
             </h1>
-            
+
             <p className="text-xl text-bambe-100 mb-8 max-w-3xl mx-auto">
-              Découvrez les joueurs, l'encadrement technique et les statistiques 
+              Découvrez les joueurs, l'encadrement technique et les statistiques
               de l'AS Bambé pour la saison 2024.
             </p>
-            
+
             {/* Stats rapides */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
               {[
@@ -149,17 +117,15 @@ const Equipe = () => {
             {[
               { id: 'joueurs', label: 'Joueurs', icon: <Users size={18} /> },
               { id: 'technique', label: 'Staff Technique', icon: <Target size={18} /> },
-              { id: 'medical', label: 'Staff Médical', icon: <Heart size={18} /> },
-              { id: 'stats', label: 'Statistiques', icon: <BarChart3 size={18} /> }
+              { id: 'medical', label: 'Staff Médical', icon: <Heart size={18} /> }
             ].map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center space-x-2 px-6 py-4 font-medium whitespace-nowrap transition-colors ${
-                  activeTab === tab.id
+                className={`flex items-center space-x-2 px-6 py-4 font-medium whitespace-nowrap transition-colors ${activeTab === tab.id
                     ? 'text-bambe-600 border-b-2 border-bambe-600'
                     : 'text-gray-600 hover:text-bambe-500'
-                }`}
+                  }`}
               >
                 {tab.icon}
                 <span>{tab.label}</span>
@@ -214,7 +180,7 @@ const Equipe = () => {
                         </div>
                         <div className="text-3xl font-bold text-bambe-600">#{player.number}</div>
                       </div>
-                      
+
                       <div className="space-y-3">
                         <div className="flex justify-between">
                           <span className="text-gray-600">Matchs joués</span>
@@ -269,7 +235,7 @@ const Equipe = () => {
                         </div>
                         <div className="text-3xl font-bold text-bambe-600">#{player.number}</div>
                       </div>
-                      
+
                       <div className="space-y-3">
                         <div className="flex justify-between">
                           <span className="text-gray-600">Matchs joués</span>
@@ -319,7 +285,7 @@ const Equipe = () => {
                         </div>
                         <div className="text-3xl font-bold text-bambe-600">#{player.number}</div>
                       </div>
-                      
+
                       <div className="space-y-3">
                         <div className="flex justify-between">
                           <span className="text-gray-600">Matchs joués</span>
@@ -374,7 +340,7 @@ const Equipe = () => {
                         </div>
                         <div className="text-3xl font-bold text-bambe-600">#{player.number}</div>
                       </div>
-                      
+
                       <div className="space-y-3">
                         <div className="flex justify-between">
                           <span className="text-gray-600">Matchs joués</span>
@@ -443,7 +409,7 @@ const Equipe = () => {
                         <p className="text-bambe-600 font-medium">{member.role}</p>
                       </div>
                     </div>
-                    
+
                     <div className="space-y-3">
                       <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                         <span className="text-gray-600">Expérience</span>
@@ -454,7 +420,7 @@ const Equipe = () => {
                         <span className="font-semibold">{member.speciality}</span>
                       </div>
                     </div>
-                    
+
                     <div className="mt-6 pt-6 border-t border-gray-100">
                       <div className="flex items-center text-sm text-gray-500">
                         <UserCheck size={16} className="mr-2" />
@@ -505,7 +471,7 @@ const Equipe = () => {
                         <p className="text-blue-600 font-medium">{member.role}</p>
                       </div>
                     </div>
-                    
+
                     <div className="space-y-3">
                       <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
                         <span className="text-gray-600">Expérience</span>
@@ -524,156 +490,6 @@ const Equipe = () => {
         </section>
       )}
 
-      {/* Statistiques */}
-      {activeTab === 'stats' && (
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
-                Statistiques de la Saison 2024
-              </h2>
-              <p className="text-gray-600 text-center max-w-2xl mx-auto">
-                Les performances de l'équipe en Championnat National
-              </p>
-            </motion.div>
-
-            {/* Stats Générales */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                <Activity className="mr-3 text-bambe-600" size={24} />
-                Performances Générales
-              </h3>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-                {[
-                  { label: "Matchs joués", value: teamStats.matchesPlayed, color: "bg-blue-100 text-blue-800" },
-                  { label: "Victoires", value: teamStats.wins, color: "bg-green-100 text-green-800" },
-                  { label: "Nuls", value: teamStats.draws, color: "bg-yellow-100 text-yellow-800" },
-                  { label: "Défaites", value: teamStats.losses, color: "bg-red-100 text-red-800" }
-                ].map((stat, index) => (
-                  <div key={index} className="bg-white rounded-xl shadow p-6 text-center">
-                    <div className={`text-3xl font-bold mb-2 ${stat.color.split(' ')[1]}`}>
-                      {stat.value}
-                    </div>
-                    <div className="text-gray-600">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {[
-                  { label: "Buts marqués", value: teamStats.goalsFor, icon: <Target size={20} /> },
-                  { label: "Buts encaissés", value: teamStats.goalsAgainst, icon: <Shield size={20} /> },
-                  { label: "Différence de buts", value: `+${teamStats.goalDifference}`, icon: <BarChart3 size={20} /> },
-                  { label: "Clean Sheets", value: teamStats.cleanSheets, icon: <Award size={20} /> }
-                ].map((stat, index) => (
-                  <div key={index} className="bg-white rounded-xl shadow p-6">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="text-gray-600">{stat.label}</div>
-                      <div className="text-bambe-600">{stat.icon}</div>
-                    </div>
-                    <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Meilleurs joueurs */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Meilleurs buteurs */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                className="bg-white rounded-2xl shadow-lg p-6"
-              >
-                <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
-                  <Target className="mr-3 text-red-500" size={24} />
-                  Meilleurs Buteurs
-                </h3>
-                <div className="space-y-4">
-                  {topScorers.map((player, index) => (
-                    <div key={index} className="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg">
-                      <div className="flex items-center space-x-4">
-                        <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
-                          {index + 1}
-                        </div>
-                        <div>
-                          <div className="font-medium">{player.name}</div>
-                          <div className="text-sm text-gray-500">{player.matches} matchs</div>
-                        </div>
-                      </div>
-                      <div className="text-right">
-                        <div className="text-xl font-bold text-gray-900">{player.goals} buts</div>
-                        <div className="text-sm text-gray-500">{player.avg.toFixed(2)} / match</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-
-              {/* Meilleurs passeurs */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                className="bg-white rounded-2xl shadow-lg p-6"
-              >
-                <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
-                  <Zap className="mr-3 text-blue-500" size={24} />
-                  Meilleurs Passeurs
-                </h3>
-                <div className="space-y-4">
-                  {topAssists.map((player, index) => (
-                    <div key={index} className="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg">
-                      <div className="flex items-center space-x-4">
-                        <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
-                          {index + 1}
-                        </div>
-                        <div>
-                          <div className="font-medium">{player.name}</div>
-                          <div className="text-sm text-gray-500">{player.matches} matchs</div>
-                        </div>
-                      </div>
-                      <div className="text-right">
-                        <div className="text-xl font-bold text-gray-900">{player.assists} passes dé.</div>
-                        <div className="text-sm text-gray-500">
-                          {((player.assists / player.matches) * 100).toFixed(1)}% d'efficacité
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
-
-            {/* Statistiques avancées */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="mt-8 bg-white rounded-2xl shadow-lg p-6"
-            >
-              <h3 className="text-xl font-bold text-gray-900 mb-6">Statistiques Avancées</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {[
-                  { label: "Possession moyenne", value: `${teamStats.possessionAvg}%`, color: "text-green-600" },
-                  { label: "Précision des passes", value: `${teamStats.passAccuracy}%`, color: "text-blue-600" },
-                  { label: "Tirs / match", value: teamStats.shotsPerGame.toFixed(1), color: "text-red-600" },
-                  { label: "Buts / match", value: teamStats.avgGoalsPerGame.toFixed(1), color: "text-yellow-600" }
-                ].map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className={`text-2xl font-bold mb-2 ${stat.color}`}>{stat.value}</div>
-                    <div className="text-gray-600 text-sm">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-      )}
-
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-r from-bambe-800 to-bambe-600 text-white">
         <div className="container mx-auto px-4 text-center">
@@ -685,12 +501,12 @@ const Equipe = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Suivez l'Équipe en Direct
             </h2>
-            
+
             <p className="text-xl text-bambe-100 mb-8">
-              Ne manquez aucun match de l'AS Bambé. Suivez les résultats en direct 
+              Ne manquez aucun match de l'AS Bambé. Suivez les résultats en direct
               et recevez les dernières nouvelles sur l'équipe.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-bambe-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
                 Prochains Matchs

@@ -125,7 +125,7 @@ const Footer = () => {
           className="text-center mt-8 pt-6 border-t border-gray-800"
         >
           <p className="text-lg font-semibold text-bambe-300">
-            "La fierté du Logone Occidental depuis 1994"
+            "La fierté du Logone Occidental depuis 2017"
           </p>
           <p className="text-sm text-gray-500 mt-2">
             Club de football professionnel • Formation des jeunes • Engagement communautaire

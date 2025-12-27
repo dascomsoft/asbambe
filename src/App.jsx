@@ -6,9 +6,12 @@ import Club from './pages/Club';
 import Equipe from './pages/Equipe';
 import Actualites from './pages/Actualites';
 import ActualiteDetail from './pages/ActualiteDetail';
-import Resultats from './pages/Resultats';
+// import Resultats from './pages/Resultats';
 import Galerie from './pages/Galerie';
 import Contact from './pages/Contact';
+import PresidentBio from './pages/PresidentBio'
+import ArticleDetail from './pages/ArticleDetail';
+
 
 function App() {
   return (
@@ -22,9 +25,11 @@ function App() {
             <Route path="/equipe" element={<Equipe />} />
             <Route path="/actualites" element={<Actualites />} />
             <Route path="/actualites/:id" element={<ActualiteDetail />} />
-            <Route path="/resultats" element={<Resultats />} />
+            {/* <Route path="/resultats" element={<Resultats />} /> */}
             <Route path="/galerie" element={<Galerie />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/presidentbio" element={<PresidentBio />} />
+            <Route path="/article/:id" element={<ArticleDetail />} />
           </Routes>
         </main>
         <Footer />

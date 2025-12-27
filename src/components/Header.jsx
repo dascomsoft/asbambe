@@ -11,7 +11,7 @@ const Header = () => {
     { path: '/club', label: 'Le Club', icon: <Trophy size={18} /> },
     { path: '/equipe', label: 'Équipe', icon: <Users size={18} /> },
     { path: '/actualites', label: 'Actualités', icon: <Calendar size={18} /> },
-    { path: '/resultats', label: 'Résultats', icon: <Trophy size={18} /> },
+    // { path: '/resultats', label: 'Résultats', icon: <Trophy size={18} /> },
     { path: '/galerie', label: 'Galerie', icon: <Image size={18} /> },
     { path: '/contact', label: 'Contact', icon: <Phone size={18} /> },
   ];
