@@ -1,493 +1,679 @@
 {
-  "performance-historique": {
-    "id": "performance-historique",
-    "title": "Performance Historique",
-    "subtitle": "Tournoi FOU de FOOT 2024 - La légende prend forme à Garoua",
-    "category": "Épopée Internationale",
-    "date": "15-25 Août 2024",
-    "author": "Rédaction AS Bambé",
-    "readTime": "12 min",
-    "heroImage": "/bambe1.jpeg",
-    "heroQuote": "Première équipe tchadienne à écrire son nom dans l'histoire du football régional africain",
-    "sections": [
-      {
-        "type": "hero",
-        "title": "L'Exploit de Garoua : Le Tchad brille au Cameroun",
-        "content": "À Garoua, capitale régionale du Nord-Cameroun, l'AS Bambé a vécu un moment qui restera gravé dans les annales du football tchadien. Première équipe nationale à participer au prestigieux tournoi FOU de FOOT 2024, nos Verts de Moundou ont défié tous les pronostics face aux géants régionaux. Dans un stade Omnisports de Garoua chauffé à blanc par 5 200 spectateurs, dont une délégation de 300 supporters venus spécialement de Moundou, nos joueurs ont démontré une combativité, une technique et un fair-play qui ont étonné les observateurs de toute l'Afrique centrale.",
-        "images": ["/bambe1.jpeg", "/bambe11.webp", "/bambe2.jpeg"],
-        "stats": [
-          { "label": "Supporters présents", "value": "5,200+", "icon": "users" },
-          { "label": "Médias internationaux", "value": "18", "icon": "tv" },
-          { "label": "Pays participants", "value": "6", "icon": "globe" },
-          { "label": "Heures de compétition", "value": "240+", "icon": "clock" }
-        ]
-      },
-      {
-        "type": "match",
-        "title": "Face à Gazelle FA : Le choc des cultures footballistiques",
-        "content": "Le 22 août 2024 restera une date historique. Face à Gazelle FA, équipe professionnelle du championnat camerounais classée 3ème la saison précédente, l'AS Bambé a livré un match d'anthologie. Menés 1-0 à la mi-temps après un penalty contesté, nos joueurs ont montré un mental d'acier. À la 67e minute, Issa Mahamat, notre milieu offensif de 19 ans, a égalisé d'une frappe du gauche à 25 mètres qui a laissé le gardien international camerounais sans réaction. Un but historique, premier but international officiel du club, célébré par l'ensemble de la délégation tchadienne présente et salué par une standing ovation du public camerounais.",
-        "highlights": [
-          "Défense héroïque de Mahamat Nour : 11 arrêts dont 3 arrêts décisifs à bout portant",
-          "Premier but international du club par Issa Mahamat (67e minute)",
-          "Reconnaissance médiatique sur TV5 Monde Afrique, Canal+ Afrique et CRTV",
-          "Invitation officielle confirmée pour l'édition 2025 du tournoi",
-          "5 de nos jeunes repérés par des recruteurs européens"
+    "performance-historique": {
+        "id": "performance-historique",
+        "title": "Performance Historique",
+        "subtitle": "Tournoi FOU de FOOT 2024 - La légende prend forme à Garoua",
+        "category": "Épopée Internationale",
+        "date": "15-25 Août 2024",
+        "author": "Rédaction AS Bambé",
+        "readTime": "12 min",
+        "heroImage": "/bambe1.jpeg",
+        "heroQuote": "Première équipe tchadienne à écrire son nom dans l'histoire du football régional africain",
+        "sections": [
+            {
+                "type": "hero",
+                "title": "L'Exploit de Garoua : Le Tchad brille au Cameroun",
+                "content": "À Garoua, capitale régionale du Nord-Cameroun, l'AS Bambé a vécu un moment qui restera gravé dans les annales du football tchadien. Première équipe nationale à participer au prestigieux tournoi FOU de FOOT 2024, nos Verts de Moundou ont défié tous les pronostics face aux géants régionaux. Dans un stade Omnisports de Garoua chauffé à blanc par 5 200 spectateurs, dont une délégation de 300 supporters venus spécialement de Moundou, nos joueurs ont démontré une combativité, une technique et un fair-play qui ont étonné les observateurs de toute l'Afrique centrale.",
+                "images": [
+                    "/bambe1.jpeg",
+                    "/bambe11.webp",
+                    "/bambe2.jpeg"
+                ],
+                "stats": [
+                    {
+                        "label": "Supporters présents",
+                        "value": "5,200+",
+                        "icon": "users"
+                    },
+                    {
+                        "label": "Médias internationaux",
+                        "value": "18",
+                        "icon": "tv"
+                    },
+                    {
+                        "label": "Pays participants",
+                        "value": "6",
+                        "icon": "globe"
+                    },
+                    {
+                        "label": "Heures de compétition",
+                        "value": "240+",
+                        "icon": "clock"
+                    }
+                ]
+            },
+            {
+                "type": "match",
+                "title": "Face à Gazelle FA : Le choc des cultures footballistiques",
+                "content": "Le 22 août 2024 restera une date historique. Face à Gazelle FA, équipe professionnelle du championnat camerounais classée 3ème la saison précédente, l'AS Bambé a livré un match d'anthologie. Menés 1-0 à la mi-temps après un penalty contesté, nos joueurs ont montré un mental d'acier. À la 67e minute, Issa Mahamat, notre milieu offensif de 19 ans, a égalisé d'une frappe du gauche à 25 mètres qui a laissé le gardien international camerounais sans réaction. Un but historique, premier but international officiel du club, célébré par l'ensemble de la délégation tchadienne présente et salué par une standing ovation du public camerounais.",
+                "highlights": [
+                    "Défense héroïque de Mahamat Nour : 11 arrêts dont 3 arrêts décisifs à bout portant",
+                    "Premier but international du club par Issa Mahamat (67e minute)",
+                    "Reconnaissance médiatique sur TV5 Monde Afrique, Canal+ Afrique et CRTV",
+                    "Invitation officielle confirmée pour l'édition 2025 du tournoi",
+                    "5 de nos jeunes repérés par des recruteurs européens"
+                ],
+                "image": "/bambe1.jpeg",
+                "stats": {
+                    "possession": "42%",
+                    "tirs": "14 (6 cadrés)",
+                    "corners": "5",
+                    "fautes": "18",
+                    "cartons jaunes": "2",
+                    "meilleur joueur": "Mahamat Nour (Gardien)"
+                }
+            },
+            {
+                "type": "impact",
+                "title": "Impact Géopolitique et Retombées Durables",
+                "content": "Cette participation a ouvert des portes diplomatiques et sportives insoupçonnées. Le Ministre tchadien des Sports a personnellement félicité l'équipe, qualifiant la performance de 'moment historique pour le sport tchadien'. Immédiatement après le tournoi, trois de nos jeunes ont été invités en stage d'essai à l'Académie Nationale du Cameroun. La Fédération Tchadienne de Football nous a octroyé une subvention exceptionnelle de 10 millions de FCFA pour le développement. Plus important encore : les inscriptions à notre centre de formation ont augmenté de 140% dans le mois suivant le tournoi.",
+                "highlights": [
+                    "Subvention exceptionnelle de 10M FCFA de la FTF",
+                    "3 joueurs en stage à l'Académie Nationale Camerounaise",
+                    "Partenariat signé avec l'Académie de Football de Garoua",
+                    "Augmentation de 140% des inscriptions au centre de formation",
+                    "Reportage spécial de 26 minutes sur Télé Tchad",
+                    "5 sponsors régionaux nouveaux en négociation"
+                ]
+            },
+            {
+                "type": "legacy",
+                "title": "Héritage et Perspective",
+                "content": "Le tournoi FOU de FOOT 2024 a marqué un tournant décisif. Nous avons prouvé que le football tchadien méridional a sa place sur la scène régionale. Les leçons tactiques apprises face à des équipes structurées professionnellement ont déjà transformé notre approche du jeu. Notre entraîneur Khalil Ibrahim a été invité à suivre une formation certifiée UEFA au Maroc. La fierté régionale générée par cette performance a renforcé l'identité du club comme ambassadeur du Logone Occidental.",
+                "highlights": [
+                    "Formation UEFA pour l'entraîneur principal",
+                    "Nouvelle méthodologie d'entraînement adoptée",
+                    "Reconnaissance comme 'Ambassadeur du Logone Occidental' par la région",
+                    "Programme d'échange jeunes avec le Cameroun mis en place",
+                    "Augmentation de 300% de notre communauté en ligne"
+                ]
+            }
         ],
-        "image": "/bambe1.jpeg",
-        "stats": {
-          "possession": "42%",
-          "tirs": "14 (6 cadrés)",
-          "corners": "5",
-          "fautes": "18",
-          "cartons jaunes": "2",
-          "meilleur joueur": "Mahamat Nour (Gardien)"
-        }
-      },
-      {
-        "type": "impact",
-        "title": "Impact Géopolitique et Retombées Durables",
-        "content": "Cette participation a ouvert des portes diplomatiques et sportives insoupçonnées. Le Ministre tchadien des Sports a personnellement félicité l'équipe, qualifiant la performance de 'moment historique pour le sport tchadien'. Immédiatement après le tournoi, trois de nos jeunes ont été invités en stage d'essai à l'Académie Nationale du Cameroun. La Fédération Tchadienne de Football nous a octroyé une subvention exceptionnelle de 10 millions de FCFA pour le développement. Plus important encore : les inscriptions à notre centre de formation ont augmenté de 140% dans le mois suivant le tournoi.",
-        "highlights": [
-          "Subvention exceptionnelle de 10M FCFA de la FTF",
-          "3 joueurs en stage à l'Académie Nationale Camerounaise",
-          "Partenariat signé avec l'Académie de Football de Garoua",
-          "Augmentation de 140% des inscriptions au centre de formation",
-          "Reportage spécial de 26 minutes sur Télé Tchad",
-          "5 sponsors régionaux nouveaux en négociation"
+        "gallery": [
+            "/bambe1.jpeg",
+            "/bambe2.jpeg",
+            "/bambe3.jpeg",
+            "/bambe4.jpeg",
+            "/bambe11.webp"
+        ],
+        "testimonials": [
+            {
+                "name": "Khalil Ibrahim",
+                "role": "Entraîneur Principal",
+                "quote": "Nos joueurs ont grandi de 10 ans en 90 minutes. Face à Gazelle FA, nous avons découvert un niveau de jeu qui va nous servir de référence pour les 5 prochaines années. Cette expérience est inestimable.",
+                "image": "/images/joueurs/coach.jpg"
+            },
+            {
+                "name": "Issa Mahamat",
+                "role": "Milieu Offensif - Auteur du but historique",
+                "quote": "Quand le ballon est entré, je n'ai pas pensé à moi. J'ai pensé à tous les jeunes de Moundou, de Doba, de Bébédjia qui rêvent de jouer à l'étranger. Nous avons montré que c'est possible. Le Tchad a du talent !",
+                "image": "/images/joueurs/issa.jpg"
+            },
+            {
+                "name": "Mahamat Nour",
+                "role": "Gardien - Homme du match",
+                "quote": "J'ai arrêté des balles, mais surtout j'ai arrêté des préjugés. On nous disait que le niveau tchadien était faible. Nous avons prouvé le contraire. Cette performance est pour tout le Tchad.",
+                "image": "/images/joueurs/gardien.jpg"
+            }
+        ],
+        "tags": [
+            "International",
+            "Historique",
+            "Tournoi FOU",
+            "Cameroun",
+            "Première",
+            "Gazelle FA",
+            "Garoua",
+            "Épopée",
+            "Performance",
+            "Afrique"
         ]
-      },
-      {
-        "type": "legacy",
-        "title": "Héritage et Perspective",
-        "content": "Le tournoi FOU de FOOT 2024 a marqué un tournant décisif. Nous avons prouvé que le football tchadien méridional a sa place sur la scène régionale. Les leçons tactiques apprises face à des équipes structurées professionnellement ont déjà transformé notre approche du jeu. Notre entraîneur Khalil Ibrahim a été invité à suivre une formation certifiée UEFA au Maroc. La fierté régionale générée par cette performance a renforcé l'identité du club comme ambassadeur du Logone Occidental.",
-        "highlights": [
-          "Formation UEFA pour l'entraîneur principal",
-          "Nouvelle méthodologie d'entraînement adoptée",
-          "Reconnaissance comme 'Ambassadeur du Logone Occidental' par la région",
-          "Programme d'échange jeunes avec le Cameroun mis en place",
-          "Augmentation de 300% de notre communauté en ligne"
+    },
+    "ambition-maximale": {
+        "id": "ambition-maximale",
+        "title": "Ambition Maximale",
+        "subtitle": "Préparation Saison 2026 - Le projet pharaonique qui va redéfinir le football tchadien",
+        "category": "Stratégie Club",
+        "date": "Préparation en cours - Lancement officiel Janvier 2025",
+        "author": "Direction Sportive & Comité Stratégique",
+        "readTime": "15 min",
+        "heroImage": "/bambe5.jpeg",
+        "heroQuote": "Nous ne préparons pas une saison, nous bâtissons une légende durable pour les 50 prochaines années",
+        "sections": [
+            {
+                "type": "hero",
+                "title": "Vision 2026 : L'Architecture d'un Géant Continental",
+                "content": "Le Stade Municipal de Moundou vibre d'une énergie nouvelle, palpable dès l'aube. Sous la direction visionnaire de Rangar Masra Abel, l'AS Bambé a lancé son plan triennal le plus ambitieux depuis sa fondation : faire du club la référence incontournable du football tchadien méridional et un acteur respecté sur la scène africaine d'ici 2026. Un investissement stratégique de 250 millions de FCFA, un recrutement scientifique, et une restructuration complète de l'écosystème footballistique local sont en cours. Objectif : construire une institution, pas juste une équipe.",
+                "images": [
+                    "/bambe5.jpeg",
+                    "/bambe6.jpeg",
+                    "/bambe7.jpeg"
+                ],
+                "stats": [
+                    {
+                        "label": "Investissement total 2024-2026",
+                        "value": "250M FCFA",
+                        "icon": "dollar"
+                    },
+                    {
+                        "label": "Nouveaux joueurs ciblés",
+                        "value": "12",
+                        "icon": "users"
+                    },
+                    {
+                        "label": "Mois de préparation intensive",
+                        "value": "24",
+                        "icon": "calendar"
+                    },
+                    {
+                        "label": "Partenaires stratégiques",
+                        "value": "8+",
+                        "icon": "handshake"
+                    }
+                ]
+            },
+            {
+                "type": "recrutement",
+                "title": "Recrutement Scientifique : La Quête de l'Excellence Générationnelle",
+                "content": "Notre cellule de recrutement, dirigée par l'ancien international tchadien Mahamat Saleh (45 sélections), opère selon une méthodologie révolutionnaire pour la région. Basée sur le modèle des académies européennes, elle combine analyse vidéo avancée, tests psychotechniques et évaluation médico-sportive. Objectif : dénicher 12 pépites (8 professionnels + 4 jeunes U21) qui viendrenent renforcer l'effectif avec un ratio 60% tchadien / 40% africain. Deux signatures majeures sont déjà officialisées : Abakar Hissein (22 ans, défenseur central de l'AS N'Djaména, capitaine U23) et Moussa Adoum (20 ans, ailier gauche formé à l'Académie Brasseries du Cameroun, vitesse chronométrée à 10.8s/100m).",
+                "highlights": [
+                    "Cellule de recrutement permanente avec 5 scouts régionaux",
+                    "Focus sur les 18-24 ans avec potentiel de revente",
+                    "2 signatures majeures officialisées (Abakar Hissein & Moussa Adoum)",
+                    "8 joueurs en stage d'essai avancé",
+                    "Partenariat avec une agence de数据分析 portugaise",
+                    "Budget recrutement : 85M FCFA sur 3 ans"
+                ],
+                "image": "/bambe6.jpeg"
+            },
+            {
+                "type": "infrastructure",
+                "title": "Révolution des Infrastructures : Du Local à l'International",
+                "content": "Le Stade Municipal de Moundou subit une métamorphose complète estimée à 120 millions de FCFA. Phase 1 : pelouse hybridée professionnelle (modèle utilisé en Ligue 1 française), système d'arrosage automatique, éclairage LED aux normes CAF. Phase 2 : vestiaires aux normes FIFA (capacité 40 personnes, sauna, jacuzzi), centre de récupération avec cryothérapie et piscine à contre-courant. Phase 3 : studio vidéo d'analyse tactique avec système Hawk-Eye, centre de formation avec internat (capacité 30 jeunes), et siège social moderne. Objectif : positionner Moundou comme la ville la mieux équipée du Tchad pour le football de haut niveau.",
+                "highlights": [
+                    "Pelouse hybridée professionnelle (investissement : 45M FCFA)",
+                    "Vestiaires aux normes FIFA Catégorie 2",
+                    "Centre de récupération avec cryothérapie (premier au Tchad)",
+                    "Studio vidéo d'analyse avec logiciel professionnel",
+                    "Internat du centre de formation (30 lits)",
+                    "Date d'achèvement : Décembre 2025"
+                ],
+                "features": [
+                    "Surface de jeu : 105m x 68m (normes internationales)",
+                    "Capacité tribunes : 5,000 places (extension à 8,000 prévue)",
+                    "6 vestiaires équipés",
+                    "Salle de presse de 50 places",
+                    "Parking VIP de 100 véhicules"
+                ]
+            },
+            {
+                "type": "formation",
+                "title": "Académie d'Excellence : Fabriquer les Champions de Demain",
+                "content": "Le cœur de notre projet 2026 : l'Académie AS Bambé. Modèle hybride inspiré des meilleures académies africaines (MimoSifcom de Côte d'Ivoire, Génération Foot du Sénégal) et européennes. Programme éducatif-sportif sur 5 ans pour 60 jeunes de 12 à 17 ans. Double projet garanti : scolaire (partenariat avec le Lycée de Moundou) et sportif (20h d'entraînement/semaine). Encadrement par 8 éducateurs diplômés, dont 2 anciens internationaux. Objectif : produire 3 professionnels par promotion et assurer l'auto-financement du club via la revente de joueurs.",
+                "highlights": [
+                    "60 jeunes en formation permanente",
+                    "Double projet scolaire-sportif garanti",
+                    "8 éducateurs diplômés (dont 2 Brevets d'État)",
+                    "Partenariat avec l'INS de Yaoundé (Cameroun)",
+                    "Programme de détection dans 20 villes tchadiennes",
+                    "Objectif : 3 pros par promotion"
+                ]
+            }
+        ],
+        "gallery": [
+            "/bambe5.jpeg",
+            "/bambe6.jpeg",
+            "/bambe7.jpeg",
+            "/bambe8.jpeg",
+            "/images/stade/renovation1.jpg",
+            "/images/stade/renovation2.jpg"
+        ],
+        "testimonials": [
+            {
+                "name": "Rangar Masra Abel",
+                "role": "Président-Fondateur",
+                "quote": "2026 n'est pas une date, c'est un état d'esprit. Nous construisons pour les 50 prochaines années. Chaque franc investi aujourd'hui est un pari sur l'avenir du Tchad. Je veux qu'un jour, on parle du 'modèle Bambé' comme on parle du 'modèle Dakar'.",
+                "image": "/president1.jpeg"
+            },
+            {
+                "name": "Mahamat Saleh",
+                "role": "Directeur Sportif - Ancien International (45 sélections)",
+                "quote": "Je suis revenu au Tchad après 15 ans en Europe pour une raison : ce projet. Pour la première fois, nous avons une vision à long terme, des moyens et une méthodologie scientifique. En 2026, nous serons prêts à conquérir l'Afrique.",
+                "image": "/images/joueurs/dsportif.jpg"
+            }
+        ],
+        "tags": [
+            "Stratégie",
+            "Recrutement",
+            "Infrastructures",
+            "2026",
+            "Investissement",
+            "Développement",
+            "Académie",
+            "Projet",
+            "Vision"
         ]
-      }
-    ],
-    "gallery": [
-      "/bambe1.jpeg",
-      "/bambe2.jpeg",
-      "/bambe3.jpeg",
-      "/bambe4.jpeg",
-      "/bambe11.webp"
-    ],
-    "testimonials": [
-      {
-        "name": "Khalil Ibrahim",
-        "role": "Entraîneur Principal",
-        "quote": "Nos joueurs ont grandi de 10 ans en 90 minutes. Face à Gazelle FA, nous avons découvert un niveau de jeu qui va nous servir de référence pour les 5 prochaines années. Cette expérience est inestimable.",
-        "image": "/images/joueurs/coach.jpg"
-      },
-      {
-        "name": "Issa Mahamat",
-        "role": "Milieu Offensif - Auteur du but historique",
-        "quote": "Quand le ballon est entré, je n'ai pas pensé à moi. J'ai pensé à tous les jeunes de Moundou, de Doba, de Bébédjia qui rêvent de jouer à l'étranger. Nous avons montré que c'est possible. Le Tchad a du talent !",
-        "image": "/images/joueurs/issa.jpg"
-      },
-      {
-        "name": "Mahamat Nour",
-        "role": "Gardien - Homme du match",
-        "quote": "J'ai arrêté des balles, mais surtout j'ai arrêté des préjugés. On nous disait que le niveau tchadien était faible. Nous avons prouvé le contraire. Cette performance est pour tout le Tchad.",
-        "image": "/images/joueurs/gardien.jpg"
-      }
-    ],
-    "tags": ["International", "Historique", "Tournoi FOU", "Cameroun", "Première", "Gazelle FA", "Garoua", "Épopée", "Performance", "Afrique"]
-  },
+    },
+    "progression-constante": {
+        "id": "progression-constante",
+        "title": "Progression Constante",
+        "subtitle": "Saison 2024-2025 - L'ascension méthodique vers l'excellence",
+        "category": "Championnat National",
+        "date": "Octobre 2024 - Juin 2025 (Saison en cours)",
+        "author": "Service Presse & Analyse Tactique",
+        "readTime": "11 min",
+        "heroImage": "/bambe2.jpeg",
+        "heroQuote": "Chaque match est un chapitre, chaque victoire une page d'histoire, chaque défaite une leçon pour grandir",
+        "sections": [
+            {
+                "type": "hero",
+                "title": "Ligue Provinciale du Logone Occidental : Le Terrain de la Révélation",
+                "content": "La saison 2024-2025 de la Ligue Provinciale du Logone Occidental est bien plus qu'un championnat pour l'AS Bambé. C'est le laboratoire où se forge notre identité, où s'exprime notre philosophie de jeu, et où se mesure notre progression réelle. Face à des adversaires redoutables comme Djarabé FC (champion en titre), Educat FC (finaliste de la Coupe du Tchad 2023), et Renaissance FC (équipe historique de la région), nous écrivons jour après jour l'histoire d'une ascension méthodique, basée sur le travail, la discipline et une vision tactique moderne.",
+                "images": [
+                    "/bambe2.jpeg",
+                    "/bambe3.jpeg",
+                    "/bambe4.jpeg"
+                ],
+                "stats": [
+                    {
+                        "label": "Matchs joués",
+                        "value": "14",
+                        "icon": "calendar"
+                    },
+                    {
+                        "label": "Victoires",
+                        "value": "8",
+                        "icon": "trophy"
+                    },
+                    {
+                        "label": "Nuls",
+                        "value": "4",
+                        "icon": "equals"
+                    },
+                    {
+                        "label": "Défaites",
+                        "value": "2",
+                        "icon": "x"
+                    },
+                    {
+                        "label": "Buts marqués",
+                        "value": "22",
+                        "icon": "target"
+                    },
+                    {
+                        "label": "Buts encaissés",
+                        "value": "9",
+                        "icon": "shield"
+                    },
+                    {
+                        "label": "Classement actuel",
+                        "value": "2ème",
+                        "icon": "trending-up"
+                    },
+                    {
+                        "label": "Points",
+                        "value": "28",
+                        "icon": "bar-chart"
+                    }
+                ]
+            },
+            {
+                "type": "match",
+                "title": "Djarabé FC 1-1 AS Bambé : Le Match Référence",
+                "content": "Le 15 février 2025, au Stade Idriss Mahamat Ouya de Doba, l'AS Bambé a réalisé sa meilleure performance de la saison. Face à Djarabé FC, champion en titre invaincu à domicile depuis 18 mois, nos Verts ont dominé la rencontre (58% de possession, 16 tirs contre 8) mais n'ont dû qu'à un penalty contesté en fin de match de ne pas repartir avec les trois points. Haroun Djibrine a ouvert le score à la 34e minute sur une contre-attaque foudroyante initiée depuis notre surface de réparation. La défense, menée par le jeune Abakar Hissein (19 ans), a tenu bon pendant 85 minutes face aux assauts répétés des champions.",
+                "highlights": [
+                    "58% de possession face au champion",
+                    "16 tirs dont 8 cadrés",
+                    "Ouverture du score par Haroun Djibrine (34e)",
+                    "Défense héroïque d'Abakar Hissein (19 ans)",
+                    "Penalty égalisateur controversé à la 87e",
+                    "Homme du match : Mahamat Nour (gardien)"
+                ],
+                "stats": {
+                    "possession": "58% - 42%",
+                    "tirs": "16-8",
+                    "tirs cadrés": "8-3",
+                    "corners": "6-2",
+                    "fautes": "14-19",
+                    "cartons jaunes": "2-4"
+                }
+            },
+            {
+                "type": "analysis",
+                "title": "Analyse Tactique : L'Évolution du Jeu",
+                "content": "L'entraîneur Khalil Ibrahim a opéré une révolution tactique cette saison. Abandon du 4-4-2 traditionnel au profit d'un 4-3-3 dynamique avec pressing haut et transitions rapides. Les statistiques parlent d'elles-mêmes : +35% de possession par rapport à la saison dernière, +40% de passes réussies dans le dernier tiers, et -25% de buts encaissés. Le recrutement d'Abakar Hissein (défenseur central) et Moussa Adoum (ailier) a apporté une dimension nouvelle : vitesse verticale et solidité défensive.",
+                "highlights": [
+                    "Système 4-3-3 adopté avec succès",
+                    "Pressing haut sur 70% du terrain",
+                    "Transitions défense-attaque en moins de 8 secondes",
+                    "+35% de possession par rapport à 2023-2024",
+                    "+40% de passes réussies dans le dernier tiers",
+                    "-25% de buts encaissés"
+                ]
+            },
+            {
+                "type": "joueurs",
+                "title": "Révélations de la Saison",
+                "content": "Plusieurs jeunes ont éclaté cette saison. Abakar Hissein (19 ans, défenseur central) : arrivé de N'Djaména, déjà capitaine à 3 reprises, taux de duels gagnés à 78%. Moussa Adoum (20 ans, ailier) : 6 buts, 4 passes décisives en 14 matches, vitesse chronométrée à 34 km/h. Mahamat Nour (gardien, 22 ans) : 7 clean sheets, taux d'arrêts à 86%. Haroun Djibrine (avant-centre, 24 ans) : 9 buts, meilleur buteur du championnat.",
+                "players": [
+                    {
+                        "name": "Abakar Hissein",
+                        "age": 19,
+                        "poste": "Défenseur Central",
+                        "stats": "78% de duels gagnés"
+                    },
+                    {
+                        "name": "Moussa Adoum",
+                        "age": 20,
+                        "poste": "Ailier Gauche",
+                        "stats": "6 buts, 4 passes décisives"
+                    },
+                    {
+                        "name": "Mahamat Nour",
+                        "age": 22,
+                        "poste": "Gardien",
+                        "stats": "7 clean sheets, 86% d'arrêts"
+                    },
+                    {
+                        "name": "Haroun Djibrine",
+                        "age": 24,
+                        "poste": "Avant-centre",
+                        "stats": "9 buts (meilleur buteur)"
+                    }
+                ]
+            }
+        ],
+        "gallery": [
+            "/bambe2.jpeg",
+            "/bambe3.jpeg",
+            "/bambe4.jpeg",
+            "/images/matchs/djara1.jpg",
+            "/images/matchs/djara2.jpg",
+            "/images/matchs/educat1.jpg"
+        ],
+        "testimonials": [
+            {
+                "name": "Khalil Ibrahim",
+                "role": "Entraîneur Principal",
+                "quote": "Cette saison, nous avons tourné une page. Nous ne jouons plus pour ne pas perdre, nous jouons pour gagner. Le 4-3-3, le pressing haut, les transitions rapides : c'est notre ADN maintenant. Les joueurs ont totalement adhéré.",
+                "image": "/images/joueurs/coach.jpg"
+            },
+            {
+                "name": "Abakar Hissein",
+                "role": "Défenseur Central - Nouvelle Recrue",
+                "quote": "Venir à Moundou était le meilleur choix de ma carrière. Ici, on travaille avec méthode, on apprend chaque jour. À 19 ans, on me donne la responsabilité de leader défensif. C'est une confiance qui me pousse à me dépasser.",
+                "image": "/images/joueurs/abakar.jpg"
+            }
+        ],
+        "tags": [
+            "Championnat",
+            "Progression",
+            "Ligue Provinciale",
+            "Saison 2024-2025",
+            "Performance",
+            "Tactique",
+            "Djarabé FC",
+            "Évolution",
+            "Statistiques"
+        ]
+    },
+    "vision-2026": {
+        "id": "vision-2026",
+        "title": "Vision 2026 : Un Nouveau Chapitre",
+        "subtitle": "Le plan triennal qui va redéfinir le football à Moundou et inspirer toute une génération",
+        "category": "Projet Institutionnel",
+        "date": "Décembre 2025 - Lancement officiel",
+        "author": "Comité de Direction & Conseil Stratégique",
+        "readTime": "18 min",
+        "heroImage": "/bambe5.jpeg",
+        "heroQuote": "De Moundou à l'Afrique, notre ambition n'a pas de frontières, notre détermination pas de limites",
+        "sections": [
+            {
+                "type": "hero",
+                "title": "2026-2029 : Les 3 Piliers de la Transformation",
+                "content": "Vision 2026 n'est pas un simple plan sportif. C'est un projet de société, un engagement envers la jeunesse tchadienne, une promesse faite à une région entière. Structuré autour de 3 piliers fondamentaux - Excellence Sportive, Développement Humain, Impact Communautaire - ce plan triennal mobilisera 450 millions de FCFA et impliquera l'ensemble des parties prenantes : joueurs, staff, supporters, partenaires, institutions. Objectif ultime : faire de l'AS Bambé la première institution footballistique auto-suffisante du Tchad d'ici 2029.",
+                "images": [
+                    "/bambe5.jpeg",
+                    "/bambe6.jpeg",
+                    "/bambe7.jpeg"
+                ],
+                "stats": [
+                    {
+                        "label": "Budget total 2026-2029",
+                        "value": "450M FCFA",
+                        "icon": "dollar"
+                    },
+                    {
+                        "label": "Emplois directs créés",
+                        "value": "35",
+                        "icon": "users"
+                    },
+                    {
+                        "label": "Jeunes formés",
+                        "value": "120",
+                        "icon": "graduation"
+                    },
+                    {
+                        "label": "Villages impactés",
+                        "value": "25",
+                        "icon": "map"
+                    }
+                ]
+            },
+            {
+                "type": "sportif",
+                "title": "Pilier 1 : Excellence Sportive - Objectif Continental",
+                "content": "D'ici 2029, l'AS Bambé devra être : 1) Champion du Tchad, 2) Participant régulier aux compétitions continentales (CAF), 3) Club formateur reconnu en Afrique. Pour y parvenir : recrutement de 15 professionnels (mixité tchadienne/internationale), création d'un centre de performance sportive (premier au Tchad), partenariats avec 3 clubs européens (Portugal, France, Belgique), et organisation annuelle du Tournoi International de Moundou.",
+                "objectifs": [
+                    "2026 : Champion du Logone Occidental",
+                    "2027 : Finaliste Coupe du Tchad",
+                    "2028 : Champion du Tchad",
+                    "2029 : Participation à la CAF Champions League"
+                ],
+                "investissements": [
+                    "Centre de performance : 95M FCFA",
+                    "Recrutement : 150M FCFA",
+                    "Infrastructures : 120M FCFA",
+                    "Formation staff : 25M FCFA"
+                ]
+            },
+            {
+                "type": "formation",
+                "title": "Pilier 2 : Développement Humain - L'Académie des Leaders",
+                "content": "Notre académie formera des champions, mais surtout des citoyens. Programme sur 5 ans intégrant : éducation scolaire (baccalauréat garanti), formation professionnelle (commerce, informatique, gestion), éducation civique, et apprentissage de 3 langues (français, anglais, arabe). Capacité : 60 internes + 40 externes. Partenariats avec l'Université de Moundou, l'Institut National de la Jeunesse et des Sports, et des entreprises locales pour l'insertion professionnelle.",
+                "programme": [
+                    "60 internes (12-17 ans) + 40 externes",
+                    "Baccalauréat garanti pour tous",
+                    "Formation trilingue (FR/EN/AR)",
+                    "Insertion professionnelle garantie",
+                    "Bourses d'excellence : 10 par an",
+                    "Partenariat avec 5 entreprises locales"
+                ]
+            },
+            {
+                "type": "communautaire",
+                "title": "Pilier 3 : Impact Communautaire - Le Club au Cœur de la Cité",
+                "content": "L'AS Bambé appartient à Moundou, au Logone Occidental, au Tchad. Notre responsabilité sociale est fondamentale. Programme 'Un Ballon, Un Avenir' : construction de 5 mini-stades dans les villages, organisation de 20 tournois jeunes par an, création d'une équipe féminine d'ici 2027, mise en place d'une fondation pour le sport adapté, et lancement d'une radio communautaire du club. Objectif : toucher 50,000 personnes directement d'ici 2029.",
+                "initiatives": [
+                    "Construction de 5 mini-stades villageois",
+                    "Création de l'équipe féminine AS Bambé (2027)",
+                    "Fondation pour le sport adapté",
+                    "Radio communautaire 'La Voix des Verts'",
+                    "20 tournois jeunes annuels",
+                    "50,000 personnes impactées"
+                ]
+            }
+        ],
+        "gallery": [
+            "/bambe5.jpeg",
+            "/bambe6.jpeg",
+            "/bambe7.jpeg",
+            "/bambe8.jpeg",
+            "/images/projet/vision1.jpg",
+            "/images/projet/vision2.jpg",
+            "/images/projet/vision3.jpg"
+        ],
+        "testimonials": [
+            {
+                "name": "Rangar Masra Abel",
+                "role": "Président-Fondateur & Architecte de Vision 2026",
+                "quote": "Vision 2026, c'est mon testament footballistique. Je veux laisser une institution pérenne, pas un club éphémère. Nous construirons des champions, mais surtout des hommes et des femmes fiers, compétents, engagés. Le football comme levier de développement : c'est possible, c'est nécessaire, c'est maintenant.",
+                "image": "/president1.jpeg"
+            },
+            {
+                "name": "Dr. Fatimé Mahamat",
+                "role": "Sociologue, Université de Moundou - Membre du Conseil Stratégique",
+                "quote": "Ce projet transcende le sport. Il s'agit de redonner de l'espoir à une jeunesse, de recréer du lien social, de construire une identité positive. L'AS Bambé devient un symbole de ce que le Tchad peut accomplir quand il unit ses forces et ses intelligences.",
+                "image": "/images/team/sociologue.jpg"
+            }
+        ],
+        "tags": [
+            "Vision",
+            "2026",
+            "Projet",
+            "Développement",
+            "Stratégique",
+            "Institution",
+            "Communautaire",
+            "Académie",
+            "Excellence",
+            "Triennal"
+        ]
+    },
 
-  "ambition-maximale": {
-    "id": "ambition-maximale",
-    "title": "Ambition Maximale",
-    "subtitle": "Préparation Saison 2026 - Le projet pharaonique qui va redéfinir le football tchadien",
-    "category": "Stratégie Club",
-    "date": "Préparation en cours - Lancement officiel Janvier 2025",
-    "author": "Direction Sportive & Comité Stratégique",
-    "readTime": "15 min",
-    "heroImage": "/bambe5.jpeg",
-    "heroQuote": "Nous ne préparons pas une saison, nous bâtissons une légende durable pour les 50 prochaines années",
-    "sections": [
-      {
-        "type": "hero",
-        "title": "Vision 2026 : L'Architecture d'un Géant Continental",
-        "content": "Le Stade Municipal de Moundou vibre d'une énergie nouvelle, palpable dès l'aube. Sous la direction visionnaire de Rangar Masra Abel, l'AS Bambé a lancé son plan triennal le plus ambitieux depuis sa fondation : faire du club la référence incontournable du football tchadien méridional et un acteur respecté sur la scène africaine d'ici 2026. Un investissement stratégique de 250 millions de FCFA, un recrutement scientifique, et une restructuration complète de l'écosystème footballistique local sont en cours. Objectif : construire une institution, pas juste une équipe.",
-        "images": ["/bambe5.jpeg", "/bambe6.jpeg", "/bambe7.jpeg"],
-        "stats": [
-          { "label": "Investissement total 2024-2026", "value": "250M FCFA", "icon": "dollar" },
-          { "label": "Nouveaux joueurs ciblés", "value": "12", "icon": "users" },
-          { "label": "Mois de préparation intensive", "value": "24", "icon": "calendar" },
-          { "label": "Partenaires stratégiques", "value": "8+", "icon": "handshake" }
-        ]
-      },
-      {
-        "type": "recrutement",
-        "title": "Recrutement Scientifique : La Quête de l'Excellence Générationnelle",
-        "content": "Notre cellule de recrutement, dirigée par l'ancien international tchadien Mahamat Saleh (45 sélections), opère selon une méthodologie révolutionnaire pour la région. Basée sur le modèle des académies européennes, elle combine analyse vidéo avancée, tests psychotechniques et évaluation médico-sportive. Objectif : dénicher 12 pépites (8 professionnels + 4 jeunes U21) qui viendrenent renforcer l'effectif avec un ratio 60% tchadien / 40% africain. Deux signatures majeures sont déjà officialisées : Abakar Hissein (22 ans, défenseur central de l'AS N'Djaména, capitaine U23) et Moussa Adoum (20 ans, ailier gauche formé à l'Académie Brasseries du Cameroun, vitesse chronométrée à 10.8s/100m).",
-        "highlights": [
-          "Cellule de recrutement permanente avec 5 scouts régionaux",
-          "Focus sur les 18-24 ans avec potentiel de revente",
-          "2 signatures majeures officialisées (Abakar Hissein & Moussa Adoum)",
-          "8 joueurs en stage d'essai avancé",
-          "Partenariat avec une agence de数据分析 portugaise",
-          "Budget recrutement : 85M FCFA sur 3 ans"
-        ],
-        "image": "/bambe6.jpeg"
-      },
-      {
-        "type": "infrastructure",
-        "title": "Révolution des Infrastructures : Du Local à l'International",
-        "content": "Le Stade Municipal de Moundou subit une métamorphose complète estimée à 120 millions de FCFA. Phase 1 : pelouse hybridée professionnelle (modèle utilisé en Ligue 1 française), système d'arrosage automatique, éclairage LED aux normes CAF. Phase 2 : vestiaires aux normes FIFA (capacité 40 personnes, sauna, jacuzzi), centre de récupération avec cryothérapie et piscine à contre-courant. Phase 3 : studio vidéo d'analyse tactique avec système Hawk-Eye, centre de formation avec internat (capacité 30 jeunes), et siège social moderne. Objectif : positionner Moundou comme la ville la mieux équipée du Tchad pour le football de haut niveau.",
-        "highlights": [
-          "Pelouse hybridée professionnelle (investissement : 45M FCFA)",
-          "Vestiaires aux normes FIFA Catégorie 2",
-          "Centre de récupération avec cryothérapie (premier au Tchad)",
-          "Studio vidéo d'analyse avec logiciel professionnel",
-          "Internat du centre de formation (30 lits)",
-          "Date d'achèvement : Décembre 2025"
-        ],
-        "features": [
-          "Surface de jeu : 105m x 68m (normes internationales)",
-          "Capacité tribunes : 5,000 places (extension à 8,000 prévue)",
-          "6 vestiaires équipés",
-          "Salle de presse de 50 places",
-          "Parking VIP de 100 véhicules"
-        ]
-      },
-      {
-        "type": "formation",
-        "title": "Académie d'Excellence : Fabriquer les Champions de Demain",
-        "content": "Le cœur de notre projet 2026 : l'Académie AS Bambé. Modèle hybride inspiré des meilleures académies africaines (MimoSifcom de Côte d'Ivoire, Génération Foot du Sénégal) et européennes. Programme éducatif-sportif sur 5 ans pour 60 jeunes de 12 à 17 ans. Double projet garanti : scolaire (partenariat avec le Lycée de Moundou) et sportif (20h d'entraînement/semaine). Encadrement par 8 éducateurs diplômés, dont 2 anciens internationaux. Objectif : produire 3 professionnels par promotion et assurer l'auto-financement du club via la revente de joueurs.",
-        "highlights": [
-          "60 jeunes en formation permanente",
-          "Double projet scolaire-sportif garanti",
-          "8 éducateurs diplômés (dont 2 Brevets d'État)",
-          "Partenariat avec l'INS de Yaoundé (Cameroun)",
-          "Programme de détection dans 20 villes tchadiennes",
-          "Objectif : 3 pros par promotion"
-        ]
-      }
-    ],
-    "gallery": [
-      "/bambe5.jpeg",
-      "/bambe6.jpeg",
-      "/bambe7.jpeg",
-      "/bambe8.jpeg",
-      "/images/stade/renovation1.jpg",
-      "/images/stade/renovation2.jpg"
-    ],
-    "testimonials": [
-      {
-        "name": "Rangar Masra Abel",
-        "role": "Président-Fondateur",
-        "quote": "2026 n'est pas une date, c'est un état d'esprit. Nous construisons pour les 50 prochaines années. Chaque franc investi aujourd'hui est un pari sur l'avenir du Tchad. Je veux qu'un jour, on parle du 'modèle Bambé' comme on parle du 'modèle Dakar'.",
-        "image": "/president1.jpeg"
-      },
-      {
-        "name": "Mahamat Saleh",
-        "role": "Directeur Sportif - Ancien International (45 sélections)",
-        "quote": "Je suis revenu au Tchad après 15 ans en Europe pour une raison : ce projet. Pour la première fois, nous avons une vision à long terme, des moyens et une méthodologie scientifique. En 2026, nous serons prêts à conquérir l'Afrique.",
-        "image": "/images/joueurs/dsportif.jpg"
-      }
-    ],
-    "tags": ["Stratégie", "Recrutement", "Infrastructures", "2026", "Investissement", "Développement", "Académie", "Projet", "Vision"]
-  },
-
-  "progression-constante": {
-    "id": "progression-constante",
-    "title": "Progression Constante",
-    "subtitle": "Saison 2024-2025 - L'ascension méthodique vers l'excellence",
-    "category": "Championnat National",
-    "date": "Octobre 2024 - Juin 2025 (Saison en cours)",
-    "author": "Service Presse & Analyse Tactique",
-    "readTime": "11 min",
-    "heroImage": "/bambe2.jpeg",
-    "heroQuote": "Chaque match est un chapitre, chaque victoire une page d'histoire, chaque défaite une leçon pour grandir",
-    "sections": [
-      {
-        "type": "hero",
-        "title": "Ligue Provinciale du Logone Occidental : Le Terrain de la Révélation",
-        "content": "La saison 2024-2025 de la Ligue Provinciale du Logone Occidental est bien plus qu'un championnat pour l'AS Bambé. C'est le laboratoire où se forge notre identité, où s'exprime notre philosophie de jeu, et où se mesure notre progression réelle. Face à des adversaires redoutables comme Djarabé FC (champion en titre), Educat FC (finaliste de la Coupe du Tchad 2023), et Renaissance FC (équipe historique de la région), nous écrivons jour après jour l'histoire d'une ascension méthodique, basée sur le travail, la discipline et une vision tactique moderne.",
-        "images": ["/bambe2.jpeg", "/bambe3.jpeg", "/bambe4.jpeg"],
-        "stats": [
-          { "label": "Matchs joués", "value": "14", "icon": "calendar" },
-          { "label": "Victoires", "value": "8", "icon": "trophy" },
-          { "label": "Nuls", "value": "4", "icon": "equals" },
-          { "label": "Défaites", "value": "2", "icon": "x" },
-          { "label": "Buts marqués", "value": "22", "icon": "target" },
-          { "label": "Buts encaissés", "value": "9", "icon": "shield" },
-          { "label": "Classement actuel", "value": "2ème", "icon": "trending-up" },
-          { "label": "Points", "value": "28", "icon": "bar-chart" }
-        ]
-      },
-      {
-        "type": "match",
-        "title": "Djarabé FC 1-1 AS Bambé : Le Match Référence",
-        "content": "Le 15 février 2025, au Stade Idriss Mahamat Ouya de Doba, l'AS Bambé a réalisé sa meilleure performance de la saison. Face à Djarabé FC, champion en titre invaincu à domicile depuis 18 mois, nos Verts ont dominé la rencontre (58% de possession, 16 tirs contre 8) mais n'ont dû qu'à un penalty contesté en fin de match de ne pas repartir avec les trois points. Haroun Djibrine a ouvert le score à la 34e minute sur une contre-attaque foudroyante initiée depuis notre surface de réparation. La défense, menée par le jeune Abakar Hissein (19 ans), a tenu bon pendant 85 minutes face aux assauts répétés des champions.",
-        "highlights": [
-          "58% de possession face au champion",
-          "16 tirs dont 8 cadrés",
-          "Ouverture du score par Haroun Djibrine (34e)",
-          "Défense héroïque d'Abakar Hissein (19 ans)",
-          "Penalty égalisateur controversé à la 87e",
-          "Homme du match : Mahamat Nour (gardien)"
-        ],
-        "stats": {
-          "possession": "58% - 42%",
-          "tirs": "16-8",
-          "tirs cadrés": "8-3",
-          "corners": "6-2",
-          "fautes": "14-19",
-          "cartons jaunes": "2-4"
-        }
-      },
-      {
-        "type": "analysis",
-        "title": "Analyse Tactique : L'Évolution du Jeu",
-        "content": "L'entraîneur Khalil Ibrahim a opéré une révolution tactique cette saison. Abandon du 4-4-2 traditionnel au profit d'un 4-3-3 dynamique avec pressing haut et transitions rapides. Les statistiques parlent d'elles-mêmes : +35% de possession par rapport à la saison dernière, +40% de passes réussies dans le dernier tiers, et -25% de buts encaissés. Le recrutement d'Abakar Hissein (défenseur central) et Moussa Adoum (ailier) a apporté une dimension nouvelle : vitesse verticale et solidité défensive.",
-        "highlights": [
-          "Système 4-3-3 adopté avec succès",
-          "Pressing haut sur 70% du terrain",
-          "Transitions défense-attaque en moins de 8 secondes",
-          "+35% de possession par rapport à 2023-2024",
-          "+40% de passes réussies dans le dernier tiers",
-          "-25% de buts encaissés"
-        ]
-      },
-      {
-        "type": "joueurs",
-        "title": "Révélations de la Saison",
-        "content": "Plusieurs jeunes ont éclaté cette saison. Abakar Hissein (19 ans, défenseur central) : arrivé de N'Djaména, déjà capitaine à 3 reprises, taux de duels gagnés à 78%. Moussa Adoum (20 ans, ailier) : 6 buts, 4 passes décisives en 14 matches, vitesse chronométrée à 34 km/h. Mahamat Nour (gardien, 22 ans) : 7 clean sheets, taux d'arrêts à 86%. Haroun Djibrine (avant-centre, 24 ans) : 9 buts, meilleur buteur du championnat.",
-        "players": [
-          { "name": "Abakar Hissein", "age": 19, "poste": "Défenseur Central", "stats": "78% de duels gagnés" },
-          { "name": "Moussa Adoum", "age": 20, "poste": "Ailier Gauche", "stats": "6 buts, 4 passes décisives" },
-          { "name": "Mahamat Nour", "age": 22, "poste": "Gardien", "stats": "7 clean sheets, 86% d'arrêts" },
-          { "name": "Haroun Djibrine", "age": 24, "poste": "Avant-centre", "stats": "9 buts (meilleur buteur)" }
-        ]
-      }
-    ],
-    "gallery": [
-      "/bambe2.jpeg",
-      "/bambe3.jpeg",
-      "/bambe4.jpeg",
-      "/images/matchs/djara1.jpg",
-      "/images/matchs/djara2.jpg",
-      "/images/matchs/educat1.jpg"
-    ],
-    "testimonials": [
-      {
-        "name": "Khalil Ibrahim",
-        "role": "Entraîneur Principal",
-        "quote": "Cette saison, nous avons tourné une page. Nous ne jouons plus pour ne pas perdre, nous jouons pour gagner. Le 4-3-3, le pressing haut, les transitions rapides : c'est notre ADN maintenant. Les joueurs ont totalement adhéré.",
-        "image": "/images/joueurs/coach.jpg"
-      },
-      {
-        "name": "Abakar Hissein",
-        "role": "Défenseur Central - Nouvelle Recrue",
-        "quote": "Venir à Moundou était le meilleur choix de ma carrière. Ici, on travaille avec méthode, on apprend chaque jour. À 19 ans, on me donne la responsabilité de leader défensif. C'est une confiance qui me pousse à me dépasser.",
-        "image": "/images/joueurs/abakar.jpg"
-      }
-    ],
-    "tags": ["Championnat", "Progression", "Ligue Provinciale", "Saison 2024-2025", "Performance", "Tactique", "Djarabé FC", "Évolution", "Statistiques"]
-  },
-
-  "vision-2026": {
-    "id": "vision-2026",
-    "title": "Vision 2026 : Un Nouveau Chapitre",
-    "subtitle": "Le plan triennal qui va redéfinir le football à Moundou et inspirer toute une génération",
-    "category": "Projet Institutionnel",
-    "date": "Décembre 2025 - Lancement officiel",
-    "author": "Comité de Direction & Conseil Stratégique",
-    "readTime": "18 min",
-    "heroImage": "/bambe5.jpeg",
-    "heroQuote": "De Moundou à l'Afrique, notre ambition n'a pas de frontières, notre détermination pas de limites",
-    "sections": [
-      {
-        "type": "hero",
-        "title": "2026-2029 : Les 3 Piliers de la Transformation",
-        "content": "Vision 2026 n'est pas un simple plan sportif. C'est un projet de société, un engagement envers la jeunesse tchadienne, une promesse faite à une région entière. Structuré autour de 3 piliers fondamentaux - Excellence Sportive, Développement Humain, Impact Communautaire - ce plan triennal mobilisera 450 millions de FCFA et impliquera l'ensemble des parties prenantes : joueurs, staff, supporters, partenaires, institutions. Objectif ultime : faire de l'AS Bambé la première institution footballistique auto-suffisante du Tchad d'ici 2029.",
-        "images": ["/bambe5.jpeg", "/bambe6.jpeg", "/bambe7.jpeg"],
-        "stats": [
-          { "label": "Budget total 2026-2029", "value": "450M FCFA", "icon": "dollar" },
-          { "label": "Emplois directs créés", "value": "35", "icon": "users" },
-          { "label": "Jeunes formés", "value": "120", "icon": "graduation" },
-          { "label": "Villages impactés", "value": "25", "icon": "map" }
-        ]
-      },
-      {
-        "type": "sportif",
-        "title": "Pilier 1 : Excellence Sportive - Objectif Continental",
-        "content": "D'ici 2029, l'AS Bambé devra être : 1) Champion du Tchad, 2) Participant régulier aux compétitions continentales (CAF), 3) Club formateur reconnu en Afrique. Pour y parvenir : recrutement de 15 professionnels (mixité tchadienne/internationale), création d'un centre de performance sportive (premier au Tchad), partenariats avec 3 clubs européens (Portugal, France, Belgique), et organisation annuelle du Tournoi International de Moundou.",
-        "objectifs": [
-          "2026 : Champion du Logone Occidental",
-          "2027 : Finaliste Coupe du Tchad",
-          "2028 : Champion du Tchad",
-          "2029 : Participation à la CAF Champions League"
-        ],
-        "investissements": [
-          "Centre de performance : 95M FCFA",
-          "Recrutement : 150M FCFA",
-          "Infrastructures : 120M FCFA",
-          "Formation staff : 25M FCFA"
-        ]
-      },
-      {
-        "type": "formation",
-        "title": "Pilier 2 : Développement Humain - L'Académie des Leaders",
-        "content": "Notre académie formera des champions, mais surtout des citoyens. Programme sur 5 ans intégrant : éducation scolaire (baccalauréat garanti), formation professionnelle (commerce, informatique, gestion), éducation civique, et apprentissage de 3 langues (français, anglais, arabe). Capacité : 60 internes + 40 externes. Partenariats avec l'Université de Moundou, l'Institut National de la Jeunesse et des Sports, et des entreprises locales pour l'insertion professionnelle.",
-        "programme": [
-          "60 internes (12-17 ans) + 40 externes",
-          "Baccalauréat garanti pour tous",
-          "Formation trilingue (FR/EN/AR)",
-          "Insertion professionnelle garantie",
-          "Bourses d'excellence : 10 par an",
-          "Partenariat avec 5 entreprises locales"
-        ]
-      },
-      {
-        "type": "communautaire",
-        "title": "Pilier 3 : Impact Communautaire - Le Club au Cœur de la Cité",
-        "content": "L'AS Bambé appartient à Moundou, au Logone Occidental, au Tchad. Notre responsabilité sociale est fondamentale. Programme 'Un Ballon, Un Avenir' : construction de 5 mini-stades dans les villages, organisation de 20 tournois jeunes par an, création d'une équipe féminine d'ici 2027, mise en place d'une fondation pour le sport adapté, et lancement d'une radio communautaire du club. Objectif : toucher 50,000 personnes directement d'ici 2029.",
-        "initiatives": [
-          "Construction de 5 mini-stades villageois",
-          "Création de l'équipe féminine AS Bambé (2027)",
-          "Fondation pour le sport adapté",
-          "Radio communautaire 'La Voix des Verts'",
-          "20 tournois jeunes annuels",
-          "50,000 personnes impactées"
-        ]
-      }
-    ],
-    "gallery": [
-      "/bambe5.jpeg",
-      "/bambe6.jpeg",
-      "/bambe7.jpeg",
-      "/bambe8.jpeg",
-      "/images/projet/vision1.jpg",
-      "/images/projet/vision2.jpg",
-      "/images/projet/vision3.jpg"
-    ],
-    "testimonials": [
-      {
-        "name": "Rangar Masra Abel",
-        "role": "Président-Fondateur & Architecte de Vision 2026",
-        "quote": "Vision 2026, c'est mon testament footballistique. Je veux laisser une institution pérenne, pas un club éphémère. Nous construirons des champions, mais surtout des hommes et des femmes fiers, compétents, engagés. Le football comme levier de développement : c'est possible, c'est nécessaire, c'est maintenant.",
-        "image": "/president1.jpeg"
-      },
-      {
-        "name": "Dr. Fatimé Mahamat",
-        "role": "Sociologue, Université de Moundou - Membre du Conseil Stratégique",
-        "quote": "Ce projet transcende le sport. Il s'agit de redonner de l'espoir à une jeunesse, de recréer du lien social, de construire une identité positive. L'AS Bambé devient un symbole de ce que le Tchad peut accomplir quand il unit ses forces et ses intelligences.",
-        "image": "/images/team/sociologue.jpg"
-      }
-    ],
-    "tags": ["Vision", "2026", "Projet", "Développement", "Stratégique", "Institution", "Communautaire", "Académie", "Excellence", "Triennal"]
-  },
-
-  "rangar-masra-abel": {
+    "rangar-masra-abel": {
     "id": "rangar-masra-abel",
     "title": "Rangar Masra Abel",
-    "subtitle": "Le Leader Visionnaire qui écrit l'avenir du football tchadien",
-    "category": "Portrait Exclusive",
+    "subtitle": "L'Architecte de la Révolution Verte - Le Visionnaire qui redéfinit le football tchadien",
+    "category": "Portrait Exclusif",
     "date": "Janvier 2025",
-    "author": "Rédaction Exclusive - Enquête spéciale 3 mois",
-    "readTime": "25 min",
+    "author": "Rédaction AS Bambé - Enquête spéciale",
+    "readTime": "15 min",
     "heroImage": "/president1.jpeg",
-    "heroQuote": "Le football n'est pas un sport, c'est une école de vie, un levier de développement, et le plus beau langage universel qui existe",
+    "heroQuote": "Un ballon peut changer une vie. Une équipe peut transformer une ville. Une vision peut révolutionner un pays.",
     "sections": [
-      {
-        "type": "hero",
-        "title": "L'Homme derrière la Légende : Parcours d'un Visionnaire",
-        "content": "Rangar Masra Abel, 52 ans, natif de Moundou. Fils d'instituteur et de commerçante. Études d'ingénieur civil à l'École Polytechnique de Yaoundé (Cameroun), MBA en gestion de projet à HEC Paris. 15 ans chez TotalEnergies, directeur de projets pétroliers en Afrique centrale. Fortune personnelle estimée à 2,5 milliards de FCFA. En 2017, tout quitte pour revenir au pays natal. Motif : 'Redonner à ma région ce qu'elle m'a donné'. Création de l'AS Bambé avec 50 millions de FCFA de fonds propres. Aujourd'hui, il consacre 70% de son temps et 40% de sa fortune à son rêve : faire de Moundou la capitale footballistique du Tchad.",
-        "images": ["/president1.jpeg", "/president2.jpg", "/president3.jpg"],
-        "stats": [
-          { "label": "Âge", "value": "52 ans", "icon": "user" },
-          { "label": "Fondation AS Bambé", "value": "2017", "icon": "calendar" },
-          { "label": "Investissement personnel", "value": "400M FCFA", "icon": "dollar" },
-          { "label": "Projets réalisés", "value": "15", "icon": "target" }
-        ]
-      },
-      {
-        "type": "philosophie",
-        "title": "Philosophie de Management : Le Modèle 'Bambé'",
-        "content": "Rangar a importé en football les méthodes du monde de l'entreprise. Management participatif (tous les joueurs ont voix au chapitre), transparence financière totale (comptes publics mensuels), responsabilisation des jeunes (3 joueurs U23 au comité directeur), et innovation permanente. Sa devise : 'Gérer un club comme une entreprise, avec le cœur d'une famille'. Résultat : taux de rétention des joueurs à 92% (record national), absentéisme à 0%, et ambiance décrite comme 'familiale' par l'ensemble du staff.",
-        "principes": [
-          "Transparence financière totale",
-          "Management participatif",
-          "3 jeunes U23 au comité directeur",
-          "Contrats de performance individuels",
-          "Prime collective pour les objectifs atteints",
-          "Cérémonie mensuelle de reconnaissance"
-        ]
-      },
-      {
-        "type": "vision",
-        "title": "La Vision 2030 : 'Moundou, Silicon Valley du Football Africain'",
-        "content": "Rangar ne s'arrête pas à 2026. Sa vision 2030 est déjà esquissée : créer à Moundou un pôle d'excellence footballistique unique en Afrique centrale. Au programme : campus sport-études de 10 hectares, centre de recherche en performance sportive, incubateur de startups sport-tech, et club-école avec filiales dans 5 pays africains. Objectif : exporter le 'modèle Bambé' et former 1,000 jeunes professionnels d'ici 2030. 'Je veux qu'un jour, les clubs européens viennent recruter à Moundou comme ils vont à Dakar ou Abidjan'.",
-        "projets": [
-          "Campus sport-études de 10 hectares",
-          "Centre de recherche en performance",
-          "Incubateur de startups sport-tech",
-          "5 filiales en Afrique (Cameroun, RDC, Congo, RCA, Niger)",
-          "1,000 jeunes formés d'ici 2030",
-          "Budget estimé : 2 milliards de FCFA"
-        ]
-      },
-      {
-        "type": "quotations",
-        "title": "Citations Iconiques",
-        "content": "Rangar Masra Abel est connu pour ses phrases percutantes, devenues des mantras pour le club :",
-        "citations": [
-          "'Un ballon peut changer une vie. Une équipe peut changer une ville.'",
-          "'Je ne veux pas de mercenaires, je veux des missionnaires.'",
-          "'Notre stade le plus important n'est pas à Moundou, il est dans le cœur de chaque enfant du Logone.'",
-          "'L'excellence n'est pas un acte, c'est une habitude. Nous la cultivons chaque jour.'",
-          "'Quand un de nos jeunes signe à l'étranger, c'est toute l'Afrique qui gagne.'"
-        ]
-      },
-      {
-        "type": "reconnaissance",
-        "title": "Reconnaissance et Influence",
-        "content": "Rangar est désormais une figure incontournable du sport africain. Invité régulier du Forum économique de l'Afrique, consultant pour la CAF sur les projets de développement, membre du think-tank 'Sport et Développement en Afrique' de l'UNESCO. Distinctions : Trophée du Leader Sportif Africain 2023 (Dubai), Ordre du Mérite Sportif Tchadien 2024, Personnalité de l'Année du magazine 'Jeune Afrique' 2024. Prochain défi : candidat au Comité Exécutif de la Fédération Tchadienne de Football.",
-        "distinctions": [
-          "Trophée du Leader Sportif Africain 2023 (Dubai)",
-          "Ordre du Mérite Sportif Tchadien 2024",
-          "Personnalité de l'Année - Jeune Afrique 2024",
-          "Consultant CAF Développement",
-          "Membre think-tank UNESCO Sport"
-        ]
-      }
+        {
+            "type": "hero",
+            "title": "L'Architecte de l'Impossible",
+            "content": "En 2017, quand Rangar Masra Abel lance l'AS Bambé, beaucoup doutent. Aujourd'hui, le doute s'est transformé en admiration. Celui qu'on surnomme 'Le Visionnaire Vert' a non seulement créé un club, mais a instauré une véritable institution sportive. Sans jamais dévoiler sa vie privée, Rangar a choisi de laisser parler ses actes : la création d'une académie de football d'excellence, la transformation du paysage sportif de Moundou, et la construction d'un modèle économique viable pour le sport tchadien. Sa philosophie ? 'Les actions parlent plus fort que les diplômes, et les résultats plus fort que les titres'.",
+            "images": [
+                "/president1.jpeg",
+                "/president2.jpg",
+                "/president3.jpg"
+            ],
+            "stats": [
+                {
+                    "label": "Fondation AS Bambé",
+                    "value": "2017",
+                    "icon": "calendar"
+                },
+                {
+                    "label": "Titres nationaux",
+                    "value": "4",
+                    "icon": "trophy"
+                },
+                {
+                    "label": "Jeunes formés",
+                    "value": "120+",
+                    "icon": "users"
+                },
+                {
+                    "label": "Projets communautaires",
+                    "value": "18",
+                    "icon": "heart"
+                }
+            ]
+        },
+        {
+            "type": "philosophie",
+            "title": "La Doctrine Bambé : Excellence & Communauté",
+            "content": "Rangar Masra Abel a instauré une culture unique dans le football tchadien. Sa méthode allie rigueur sportive et engagement social. Sous sa présidence, l'AS Bambé n'est pas seulement un club de football, mais un moteur de développement local. Chaque victoire sur le terrain s'accompagne d'une action sociale hors du terrain. 'Nous ne jouons pas seulement pour gagner des matchs, nous jouons pour gagner des cœurs et transformer des vies', déclare-t-il souvent. Cette philosophie a fait de l'AS Bambé le club le plus suivi et le plus respecté du pays.",
+            "principes": [
+                "Football d'excellence avec responsabilité sociale",
+                "Formation des jeunes comme priorité absolue",
+                "Transparence dans la gestion sportive",
+                "Implication directe dans la communauté",
+                "Innovation dans le développement sportif",
+                "Leadership par l'exemple"
+            ]
+        },
+        {
+            "type": "vision",
+            "title": "La Révolution Verte : Projet 2026-2030",
+            "content": "La vision de Rangar Masra Abel dépasse les frontières du football. Son projet pour l'AS Bambé s'inscrit dans une démarche plus large de développement régional. Il voit dans le sport un levier puissant pour l'éducation, la santé et l'émancipation des jeunes. 'Le jour où un enfant de Moundou portera le maillot d'un grand club européen grâce à notre formation, ce jour-là, nous aurons gagné notre plus beau trophée', affirme-t-il avec conviction. Son ambition : faire de Moundou un pôle d'excellence footballistique reconnu à travers l'Afrique.",
+            "projets": [
+                "Académie de football d'excellence",
+                "Programme Sport-Études pour les jeunes",
+                "Centre médical sportif de pointe",
+                "Partenariats internationaux de formation",
+                "Développement des infrastructures locales",
+                "Formation des entraîneurs tchadiens"
+            ]
+        },
+        {
+            "type": "quotations",
+            "title": "Les Paroles qui Inspirent une Génération",
+            "content": "Chaque intervention de Rangar Masra Abel devient une source d'inspiration pour les jeunes sportifs et les dirigeants du continent :",
+            "citations": [
+                "'Le football est notre langue commune, notre pont entre les communautés, notre espoir collectif.'",
+                "'Je ne mesure pas notre succès au nombre de trophées, mais au nombre de vies que nous transformons.'",
+                "'À l'AS Bambé, nous ne formons pas que des footballeurs, nous formons des leaders de demain.'",
+                "'Chaque enfant qui touche un ballon dans nos académies porte en lui le potentiel de changer notre nation.'",
+                "'Notre plus grande victoire ? Voir nos anciens joueurs revenir pour former la prochaine génération.'"
+            ]
+        },
+        {
+            "type": "reconnaissance",
+            "title": "Un Leadership Reconnu",
+            "content": "Sans jamais rechercher les honneurs personnels, Rangar Masra Abel a été salué à plusieurs reprises pour son leadership innovant. Son modèle de gestion transparente et son engagement communautaire ont fait de l'AS Bambé une référence en matière de gouvernance sportive en Afrique. 'Ce qui m'importe, ce n'est pas les récompenses individuelles, mais la reconnaissance du travail collectif de toute l'équipe AS Bambé', insiste-t-il modestement.",
+            "distinctions": [
+                "Prix de l'Innovation Sportive en Afrique 2023",
+                "Reconnaissance par la Fédération Tchadienne de Football",
+                "Modèle de référence CAF pour les clubs communautaires",
+                "Invité d'honneur au Forum du Sport Africain",
+                "Mention spéciale pour l'engagement social"
+            ]
+        }
     ],
     "gallery": [
-      "/president1.jpeg",
-      "/president2.jpg",
-      "/president3.jpg",
-      "/president4.jpg",
-      "/president5.jpg",
-      "/president6.jpg"
+        "/president1.jpeg",
+        "/president2.jpg",
+        "/president3.jpg",
+        "/president4.jpg",
+        "/president5.jpg",
+        "/president6.jpg"
     ],
     "testimonials": [
-      {
-        "name": "Khalil Ibrahim",
-        "role": "Entraîneur Principal - 4 ans avec Rangar",
-        "quote": "Travailler avec Rangar, c'est comme avoir un master en leadership chaque jour. Il nous pousse à voir plus loin, à rêver plus grand. Sa confiance est totale, son exigence aussi. C'est le patron idéal : visionnaire mais terrain, exigeant mais juste.",
-        "image": "/images/joueurs/coach.jpg"
-      },
-      {
-        "name": "Haroun Djibrine",
-        "role": "Capitaine de l'équipe - Membre du comité directeur",
-        "quote": "À 24 ans, je siège au comité directeur aux côtés de Rangar. Il nous écoute, nous consulte, nous responsabilise. C'est unique au Tchad. Ici, les joueurs ne sont pas des employés, nous sommes des partenaires dans un projet commun.",
-        "image": "/images/joueurs/capitaine.jpg"
-      },
-      {
-        "name": "Dr. Hassan Abdoulaye",
-        "role": "Ministre des Sports du Tchad (2019-2023)",
-        "quote": "Rangar Masra Abel est le prototype du leader sportif dont l'Afrique a besoin. Il combine expertise technique, vision stratégique, et engagement citoyen. Son modèle devrait être étudié dans toutes les écoles de management sportif du continent.",
-        "image": "/images/team/ministre.jpg"
-      }
+        {
+            "name": "Khalil Ibrahim",
+            "role": "Entraîneur Principal - AS Bambé",
+            "quote": "Travailler avec le président Rangar, c'est participer à une aventure humaine exceptionnelle. Il a cette capacité unique de voir le potentiel là où d'autres ne voient que des difficultés. Sa vision dépasse le sport : il construit l'avenir de toute une région.",
+            "image": "/images/joueurs/coach.jpg"
+        },
+        {
+            "name": "Haroun Djibrine",
+            "role": "Capitaine de l'équipe",
+            "quote": "Le président nous apprend que le maillot de l'AS Bambé est un honneur et une responsabilité. Grâce à lui, nous comprenons que nous représentons plus qu'un club : nous portons les espoirs de toute une jeunesse.",
+            "image": "/images/joueurs/capitaine.jpg"
+        },
+        {
+            "name": "Mariam Ousmane",
+            "role": "Coordinatrice des projets communautaires",
+            "quote": "Ce qui distingue Rangar Masra Abel, c'est son authenticité. Chaque projet, chaque décision est guidée par une volonté sincère d'apporter du changement positif. Sous sa direction, le sport devient un véritable outil de développement.",
+            "image": "/images/team/coordinatrice.jpg"
+        }
     ],
-    "tags": ["Président", "Leader", "Visionnaire", "Portrait", "Biographie", "Management", "Philosophie", "Rangar", "Abel", "Fondateur"]
-  }
+    "tags": [
+        "Président",
+        "Visionnaire",
+        "Leader",
+        "Fondateur",
+        "Architecte",
+        "Innovateur",
+        "Communautaire",
+        "Développement",
+        "Excellence",
+        "Inspiration"
+    ]
+}
 }

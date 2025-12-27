@@ -9,6 +9,12 @@ const ActualiteDetail = () => {
   const [relatedArticles, setRelatedArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+
+    useEffect(() =>{
+    window.scrollTo(0,0)
+   },[])
+
+
   // Données de l'article (pour l'exemple - en pratique, tu récupérerais depuis une API ou JSON)
   const articlesData = {
     1: {

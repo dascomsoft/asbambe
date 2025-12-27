@@ -1,8 +1,14 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { User, Trophy, Globe, Heart, Calendar, MapPin, Mail, Phone, Award, Target, Users as UsersIcon, Star } from 'lucide-react';
+import { useEffect } from 'react';
 
 const PresidentBio = () => {
+
+      useEffect(() =>{
+    window.scrollTo(0,0)
+   },[])
+   
   const presidentData = {
     name: 'Rangar Masra Abel',
     title: 'Président de l\'AS Bambé de Moundou',

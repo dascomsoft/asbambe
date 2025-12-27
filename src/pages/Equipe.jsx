@@ -1,8 +1,15 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Trophy, Target, Shield, Award, Crosshair, Zap, Heart, Star, Calendar, Flag, Target as TargetIcon, UserCheck } from 'lucide-react';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Equipe = () => {
+
+    useEffect(() =>{
+      window.scrollTo(0,0)
+     },[])
+
   const [activeTab, setActiveTab] = useState('joueurs');
 
   // Effectif principal
@@ -69,6 +76,10 @@ const Equipe = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
+      
+{/*       
+      
+      
       <section className="relative bg-gradient-to-br from-bambe-900 to-bambe-700 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
@@ -92,7 +103,6 @@ const Equipe = () => {
               de l'AS Bambé pour la saison 2024.
             </p>
 
-            {/* Stats rapides */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
               {[
                 { value: "23", label: "Joueurs professionnels" },
@@ -108,7 +118,118 @@ const Equipe = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
+
+
+
+      <section className="relative bg-gradient-to-br from-bambe-900/95 to-bambe-700/90 text-white overflow-hidden min-h-[70vh] flex items-center">
+  {/* Background image pour la section Équipe */}
+  <div 
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+    style={{ backgroundImage: `url('/bambe8.jpeg')` }}
+  >
+    {/* Overlay pour améliorer la lisibilité */}
+    <div className="absolute inset-0 bg-gradient-to-br from-bambe-900/80 via-bambe-800/75 to-bambe-700/70"></div>
+    
+    {/* Effet de texture subtile */}
+    <div className="absolute inset-0 opacity-15">
+      <div className="absolute inset-0" style={{
+        backgroundImage: `radial-gradient(circle at 30% 40%, rgba(255,255,255,0.1) 0%, transparent 60%),
+                         radial-gradient(circle at 70% 60%, rgba(255,255,255,0.1) 0%, transparent 60%)`
+      }}></div>
+    </div>
+  </div>
+  
+  <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="max-w-4xl mx-auto text-center"
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8 border border-white/30 shadow-lg"
+      >
+        <Users size={18} className="text-yellow-300" />
+        <span className="font-medium text-white">Effectif 2024</span>
+      </motion.div>
+
+      <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+      >
+        Notre Équipe
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="block text-yellow-300 mt-2 text-2xl md:text-3xl lg:text-4xl"
+        >
+          Première & Staff
+        </motion.span>
+      </motion.h1>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6 }}
+        className="text-xl text-white/90 mb-8 max-w-3xl mx-auto px-4 font-medium"
+      >
+        Découvrez les joueurs, l'encadrement technique et les statistiques
+        de l'AS Bambé pour la saison 2024.
+      </motion.p>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8 }}
+        className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-2xl mx-auto px-4"
+      >
+        {[
+          { value: "23", label: "Joueurs professionnels", icon: "👤" },
+          { value: "8", label: "Membres du staff", icon: "👔" },
+          { value: "15", label: "Matchs joués", icon: "⚽" },
+          { value: "9", label: "Victoires", icon: "🏆" }
+        ].map((stat, index) => (
+          <div 
+            key={index} 
+            className="bg-white/15 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+          >
+            <div className="text-3xl mb-2">{stat.icon}</div>
+            <div className="text-2xl md:text-3xl font-bold text-yellow-300 mb-1">{stat.value}</div>
+            <div className="text-sm text-white/80 font-medium">{stat.label}</div>
+          </div>
+        ))}
+      </motion.div>
+
+      {/* Boutons d'action */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1 }}
+        className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4"
+      >
+        <Link
+          to="/equipe/joueurs"
+          className="group bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto min-w-[200px] transform hover:scale-105"
+        >
+          <span>Voir les Joueurs</span>
+          <Users className="group-hover:scale-110 transition-transform" size={18} />
+        </Link>
+        <Link
+          to="/equipe/staff"
+          className="group border-2 border-white hover:bg-white/20 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base md:text-lg backdrop-blur-md transition-all w-full sm:w-auto min-w-[200px] transform hover:scale-105 flex items-center justify-center gap-2"
+        >
+          <span>Le Staff Technique</span>
+          <Users className="group-hover:scale-110 transition-transform" size={18} />
+        </Link>
+      </motion.div>
+    </motion.div>
+  </div>
+</section>
 
       {/* Navigation Tabs */}
       <section className="sticky top-20 z-40 bg-white shadow-md">

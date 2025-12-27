@@ -210,7 +210,10 @@ const Club = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50">
       {/* Hero Section - DATE CORRIGÉE */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+      
+      
+{/*       
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-[120px] pb-[120px]">
         <div className="absolute inset-0 bg-gradient-to-br from-bambe-900 via-bambe-800 to-bambe-700 z-10" />
         
         <div className="absolute inset-0 opacity-20">
@@ -264,8 +267,6 @@ const Club = () => {
                 Une ascension fulgurante, une passion partagée
               </span>
             </motion.p>
-
-            {/* Stats Hero - COULEURS AMÉLIORÉES */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -285,7 +286,6 @@ const Club = () => {
               ))}
             </motion.div>
 
-            {/* Navigation Hero */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -309,8 +309,6 @@ const Club = () => {
             </motion.div>
           </motion.div>
         </div>
-
-        {/* Scroll Indicator */}
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
@@ -327,7 +325,148 @@ const Club = () => {
             </div>
           </div>
         </motion.div>
-      </section>
+      </section> */}
+
+
+
+
+
+
+
+<section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-[120px] pb-[120px]">
+  {/* Background image avec overlay gradient */}
+  <div 
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: `url('/bambe9.jpeg')` }}
+  >
+    {/* Overlay gradient pour améliorer la lisibilité du texte */}
+    <div className="absolute inset-0 bg-gradient-to-br from-bambe-900/90 via-bambe-800/85 to-bambe-700/80 z-10" />
+    
+    {/* Effet de texture légère */}
+    <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0" style={{
+        backgroundImage: `radial-gradient(circle at 20% 30%, rgba(255,255,255,0.15) 0%, transparent 50%),
+                         radial-gradient(circle at 80% 70%, rgba(255,255,255,0.15) 0%, transparent 50%)`
+      }}></div>
+    </div>
+  </div>
+
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="max-w-6xl mx-auto"
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.2 }}
+        className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8 border border-white/30 shadow-lg"
+      >
+        <Sparkles className="text-yellow-300" size={18} />
+        <span className="text-white font-semibold text-sm sm:text-base">CRÉÉ EN JUIN 2017</span>
+      </motion.div>
+      
+      <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight text-center"
+      >
+        <span className="block">AS BAMBÉ</span>
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="block text-yellow-300 mt-1 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
+        >
+          L'ÉLAN VERT DU TCHAD
+        </motion.span>
+      </motion.h1>
+      
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6 }}
+        className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-10 font-medium leading-relaxed text-center px-4"
+      >
+        Depuis 2017, nous écrivons l'histoire du football tchadien
+        <span className="block mt-2 text-yellow-200/90 text-base sm:text-lg md:text-xl font-bold">
+          Une ascension fulgurante, une passion partagée
+        </span>
+      </motion.p>
+
+      {/* Stats Hero - Avec fond semi-transparent */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8 }}
+        className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto px-4"
+      >
+        {stats.map((stat, index) => (
+          <div key={index} className={`bg-gradient-to-br ${stat.color} backdrop-blur-md rounded-xl sm:rounded-2xl p-3 sm:p-4 text-center border border-white/30 shadow-xl`}>
+            <div className="flex justify-center mb-1 sm:mb-2">
+              <div className="scale-75 sm:scale-90">
+                {stat.icon}
+              </div>
+            </div>
+            <div className={`text-xl sm:text-2xl md:text-3xl font-bold ${stat.textColor} mb-0.5 sm:mb-1`}>{stat.number}</div>
+            <div className="text-xs sm:text-sm text-gray-800 font-medium">{stat.label}</div>
+          </div>
+        ))}
+      </motion.div>
+
+      {/* Navigation Hero */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1 }}
+        className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4"
+      >
+        <Link
+          to="/article/vision-2026"
+          className="group bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto min-w-[180px] transform hover:scale-105"
+        >
+          <span>Notre Vision 2026</span>
+          <Target className="group-hover:scale-110 transition-transform" size={18} />
+        </Link>
+        <Link
+          to="/equipe"
+          className="group border-2 border-white hover:bg-white/30 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base md:text-lg backdrop-blur-md transition-all w-full sm:w-auto min-w-[180px] transform hover:scale-105 flex items-center justify-center gap-2"
+        >
+          <span>Découvrir l'Équipe</span>
+          <Users className="group-hover:scale-110 transition-transform" size={18} />
+        </Link>
+      </motion.div>
+    </motion.div>
+  </div>
+
+  {/* Scroll Indicator */}
+  <motion.div
+    animate={{ y: [0, 10, 0] }}
+    transition={{ repeat: Infinity, duration: 2 }}
+    className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-20"
+  >
+    <div className="text-white/80 text-xs sm:text-sm flex flex-col items-center">
+      <span className="mb-1 sm:mb-2 font-medium">Explorer</span>
+      <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white/70 rounded-full flex justify-center items-start pt-1 sm:pt-2">
+        <motion.div
+          animate={{ y: [0, 6, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5 }}
+          className="w-1 h-2 sm:h-3 bg-white rounded-full"
+        />
+      </div>
+    </div>
+  </motion.div>
+</section>
+
+
+
+
+
+
+
+
 
       {/* Histoire Timeline - DATE CORRIGÉE */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white via-gray-50 to-white">

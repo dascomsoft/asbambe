@@ -1,12 +1,19 @@
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Image as ImageIcon, Video, Camera, Filter, Download, Share2, Heart, X, Play, ChevronLeft, ChevronRight, Grid, List } from 'lucide-react';
+import { Image as ImageIcon, Video, Camera,Archive ,  Filter, Download, Share2, Heart, X, Play, ChevronLeft, ChevronRight, Grid, List } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Galerie = () => {
   const [activeCategory, setActiveCategory] = useState('toutes');
   const [selectedImage, setSelectedImage] = useState(null);
   const [viewMode, setViewMode] = useState('grid');
   const [likedImages, setLikedImages] = useState(new Set());
+
+
+
+    useEffect(() =>{
+    window.scrollTo(0,0)
+   },[])
 
   // Catégories de la galerie
   const categories = [
@@ -260,49 +267,146 @@ const Galerie = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-bambe-900 to-bambe-700 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/30"></div>
-        <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="max-w-4xl mx-auto text-center"
+      
+      
+
+
+
+
+<section className="relative min-h-[60vh] flex items-center justify-center text-white overflow-hidden">
+  {/* Background image pour la section Galerie */}
+  <div 
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+    style={{ backgroundImage: `url('/ballon1.jpg')` }}
+  >
+    {/* Overlay pour améliorer la lisibilité */}
+    <div className="absolute inset-0 bg-gradient-to-br from-bambe-900/90 via-bambe-800/85 to-bambe-700/80"></div>
+    
+    {/* Effet de texture subtile */}
+    <div className="absolute inset-0 opacity-25">
+      <div className="absolute inset-0" style={{
+        backgroundImage: `radial-gradient(circle at 20% 40%, rgba(255,255,255,0.15) 0%, transparent 50%),
+                         radial-gradient(circle at 80% 60%, rgba(255,255,255,0.15) 0%, transparent 50%),
+                         radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 60%)`
+      }}></div>
+    </div>
+  </div>
+  
+  <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="max-w-5xl mx-auto text-center"
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8 border border-white/30 shadow-lg"
+      >
+        <Camera size={18} className="text-yellow-300" />
+        <span className="font-medium text-white">Médiathèque du Club</span>
+      </motion.div>
+      
+      <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+      >
+        Galerie Photos & Vidéos
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="block text-yellow-300 mt-2 text-2xl md:text-3xl lg:text-4xl"
+        >
+          AS Bambé Moundou
+        </motion.span>
+      </motion.h1>
+      
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6 }}
+        className="text-xl text-white/90 mb-8 max-w-3xl mx-auto px-4 font-medium"
+      >
+        Plongez dans l'univers des Verts de Moundou à travers notre collection 
+        exclusive de photos et vidéos officielles.
+      </motion.p>
+      
+      {/* Stats rapides améliorées */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8 }}
+        className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto px-4"
+      >
+        {[
+          { 
+            value: "156", 
+            label: "Photos", 
+            icon: <ImageIcon size={24} className="text-yellow-300" />,
+            bg: "from-green-500/20 to-green-600/20",
+            border: "border-green-400/30"
+          },
+          { 
+            value: "24", 
+            label: "Vidéos", 
+            icon: <Video size={24} className="text-blue-300" />,
+            bg: "from-blue-500/20 to-blue-600/20",
+            border: "border-blue-400/30"
+          },
+          { 
+            value: "7", 
+            label: "Catégories", 
+            icon: <Filter size={24} className="text-purple-300" />,
+            bg: "from-purple-500/20 to-purple-600/20",
+            border: "border-purple-400/30"
+          },
+          { 
+            value: "2.4K", 
+            label: "Téléchargements", 
+            icon: <Download size={24} className="text-yellow-300" />,
+            bg: "from-yellow-500/20 to-yellow-600/20",
+            border: "border-yellow-400/30"
+          }
+        ].map((stat, index) => (
+          <div 
+            key={index} 
+            className={`bg-gradient-to-br ${stat.bg} backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-6 border ${stat.border} shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group`}
           >
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <Camera size={18} />
-              <span className="font-medium">Médiathèque du Club</span>
+            <div className="flex items-center justify-center space-x-3 sm:space-x-4">
+              <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br ${stat.bg.replace('/20', '/30')} flex items-center justify-center group-hover:scale-110 transition-transform`}>
+                {stat.icon}
+              </div>
+              <div className="text-left">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-0.5">{stat.value}</div>
+                <div className="text-sm sm:text-base text-white/80 font-medium">{stat.label}</div>
+              </div>
             </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Galerie Photos & Vidéos
-              <span className="block text-yellow-300">AS Bambé Moundou</span>
-            </h1>
-            
-            <p className="text-xl text-bambe-100 mb-8 max-w-3xl mx-auto">
-              Plongez dans l'univers des Verts de Moundou à travers notre collection 
-              exclusive de photos et vidéos officielles.
-            </p>
-            
-            {/* Stats rapides */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-              {[
-                { value: "156", label: "Photos", icon: <ImageIcon size={20} /> },
-                { value: "24", label: "Vidéos", icon: <Video size={20} /> },
-                { value: "7", label: "Catégories", icon: <Filter size={20} /> },
-                { value: "2.4K", label: "Téléchargements", icon: <Download size={20} /> }
-              ].map((stat, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 flex items-center justify-center space-x-3">
-                  {stat.icon}
-                  <div className="text-left">
-                    <div className="text-2xl md:text-3xl font-bold text-yellow-300">{stat.value}</div>
-                    <div className="text-sm text-bambe-200">{stat.label}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+          </div>
+        ))}
+      </motion.div>
+    
+      {/* Note sur les médias */}
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2 }}
+        className="mt-8 text-sm text-white/60 max-w-2xl mx-auto px-4"
+      >
+        ⚡ Accès instantané • 📸 Photos HD • 🎥 Vidéos 4K • 🔒 Contenu officiel
+      </motion.p>
+    </motion.div>
+  </div>
+</section>
+
+
+
+
+
+
+
 
       {/* Catégories & Contrôles */}
       <section className="sticky top-20 z-30 bg-white shadow-sm border-b">

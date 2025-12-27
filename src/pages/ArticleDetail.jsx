@@ -21,6 +21,10 @@ const ArticleDetail = () => {
   const [isLiked, setIsLiked] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
 
+    useEffect(() =>{
+      window.scrollTo(0,0)
+     },[])
+
   useEffect(() => {
     // Simuler le chargement
     setTimeout(() => {

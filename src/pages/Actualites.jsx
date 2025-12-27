@@ -2,10 +2,15 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Calendar, User, Tag, ChevronRight, Search, Filter, TrendingUp, Clock, Eye, MessageCircle, Share2, Bookmark, Newspaper } from 'lucide-react';
+import { useEffect } from 'react';
 
 const Actualites = () => {
   const [activeCategory, setActiveCategory] = useState('toutes');
   const [searchQuery, setSearchQuery] = useState('');
+
+    useEffect(() =>{
+      window.scrollTo(0,0)
+     },[])
 
   // Catégories d'actualités
   const categories = [
@@ -166,6 +171,9 @@ const Actualites = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
+
+
+{/* 
       <section className="relative bg-gradient-to-br from-bambe-900 to-bambe-700 text-white overflow-hidden">
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
@@ -189,7 +197,6 @@ const Actualites = () => {
               et coulisses du club.
             </p>
             
-            {/* Barre de recherche */}
             <div className="max-w-2xl mx-auto">
               <div className="relative">
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
@@ -205,7 +212,124 @@ const Actualites = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
+
+
+      <section className="relative min-h-[60vh] flex items-center justify-center text-white overflow-hidden">
+  {/* Background image pour la section Actualités */}
+  <div 
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+    style={{ backgroundImage: `url('/ballon2.jpg')` }}
+  >
+    {/* Overlay pour améliorer la lisibilité */}
+    <div className="absolute inset-0 bg-gradient-to-br from-bambe-900/85 via-bambe-800/80 to-bambe-700/75"></div>
+    
+    {/* Effet de texture subtile */}
+    <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0" style={{
+        backgroundImage: `radial-gradient(circle at 25% 35%, rgba(255,255,255,0.12) 0%, transparent 55%),
+                         radial-gradient(circle at 75% 65%, rgba(255,255,255,0.12) 0%, transparent 55%)`
+      }}></div>
+    </div>
+  </div>
+  
+  <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="max-w-5xl mx-auto text-center"
+    >
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8 border border-white/30 shadow-lg"
+      >
+        <Newspaper size={18} className="text-yellow-300" />
+        <span className="font-medium text-white">Actualités du Club</span>
+      </motion.div>
+      
+      <motion.h1
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+      >
+        Les Dernières Nouvelles
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="block text-yellow-300 mt-2 text-2xl md:text-3xl lg:text-4xl"
+        >
+          des Verts de Moundou
+        </motion.span>
+      </motion.h1>
+      
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6 }}
+        className="text-xl text-white/90 mb-8 max-w-3xl mx-auto px-4 font-medium"
+      >
+        Suivez toute l'actualité de l'AS Bambé : matchs, transferts, interviews 
+        et coulisses du club.
+      </motion.p>
+      
+      {/* Barre de recherche améliorée */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.8 }}
+        className="max-w-2xl mx-auto px-4"
+      >
+        <div className="relative group">
+          <Filter className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white/60 group-hover:text-white transition-colors cursor-pointer hover:scale-110" size={20} />
+        </div>
+        
+        {/* Tags de filtrage rapide */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+          className="flex flex-wrap gap-2 justify-center mt-4"
+        >
+          {['Matchs', 'Transferts', 'Interviews', 'Coulisses', 'Résultats', 'Classement'].map((tag, index) => (
+            <button
+              key={index}
+              onClick={() => setSearchQuery(tag)}
+              className="px-3 py-1.5 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full text-xs sm:text-sm text-white border border-white/20 hover:border-white/40 transition-all duration-300 hover:scale-105"
+            >
+              #{tag}
+            </button>
+          ))}
+        </motion.div>
+        
+        {/* Stats des actualités */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2 }}
+          className="grid grid-cols-3 gap-3 sm:gap-4 max-w-lg mx-auto mt-6 sm:mt-8"
+        >
+          {[
+            { value: "48", label: "Articles", icon: "📰" },
+            { value: "12", label: "Catégories", icon: "🏷️" },
+            { value: "24/7", label: "Mise à jour", icon: "⚡" }
+          ].map((stat, index) => (
+            <div 
+              key={index} 
+              className="bg-white/10 backdrop-blur-sm rounded-lg sm:rounded-xl p-3 sm:p-4 border border-white/20"
+            >
+              <div className="text-xl sm:text-2xl mb-1">{stat.icon}</div>
+              <div className="text-lg sm:text-xl font-bold text-yellow-300">{stat.value}</div>
+              <div className="text-xs sm:text-sm text-white/80">{stat.label}</div>
+            </div>
+          ))}
+        </motion.div>
+      </motion.div>
+    </motion.div>
+  </div>
+</section>
 
       {/* Catégories */}
       <section className="sticky top-20 z-30 bg-white shadow-sm border-b">
