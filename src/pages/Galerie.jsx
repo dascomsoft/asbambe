@@ -268,11 +268,6 @@ const Galerie = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       
-      
-
-
-
-
 <section className="relative min-h-[60vh] flex items-center justify-center text-white overflow-hidden">
   {/* Background image pour la section Galerie */}
   <div 
@@ -280,7 +275,7 @@ const Galerie = () => {
     style={{ backgroundImage: `url('/ballon1.jpg')` }}
   >
     {/* Overlay pour améliorer la lisibilité */}
-    <div className="absolute inset-0 bg-gradient-to-br from-bambe-900/90 via-bambe-800/85 to-bambe-700/80"></div>
+    <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-700/80 to-blue-500/70 z-10"></div>
     
     {/* Effet de texture subtile */}
     <div className="absolute inset-0 opacity-25">

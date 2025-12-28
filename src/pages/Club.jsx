@@ -340,7 +340,7 @@ const Club = () => {
     style={{ backgroundImage: `url('/bambe9.jpeg')` }}
   >
     {/* Overlay gradient pour améliorer la lisibilité du texte */}
-    <div className="absolute inset-0 bg-gradient-to-br from-bambe-900/90 via-bambe-800/85 to-bambe-700/80 z-10" />
+    <div className="absolute inset-0 bg-gradient-to-br from-sky-900/90 via-sky-700/80 to-sky-500/70 z-10" />
     
     {/* Effet de texture légère */}
     <div className="absolute inset-0 opacity-10">
@@ -741,7 +741,7 @@ const Club = () => {
             viewport={{ once: true }}
             className="mt-8 sm:mt-12 md:mt-16"
           >
-            <div className="bg-gradient-to-r from-bambe-800 to-bambe-900 text-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 border border-bambe-700 shadow-xl">
+            <div className="bg-gradient-to-br from-blue-900/90 via-blue-700/80 to-blue-500/70 z-10 text-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 border border-bambe-700 shadow-xl">
               <div className="max-w-3xl mx-auto text-center">
                 <div className="w-12 h-12 mx-auto mb-4 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center">
                   <QuoteIcon className="w-6 h-6 text-white" />
@@ -903,7 +903,7 @@ const Club = () => {
 
       {/* Vision Future */}
       <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-bambe-900 via-bambe-800 to-bambe-700" />
+        <div className="absolute inset-0 bg-gradient-to-r from-sky-900 via-sky-900 to-sky-900" />
         
         {/* Effets visuels */}
         <div className="absolute inset-0 opacity-10">

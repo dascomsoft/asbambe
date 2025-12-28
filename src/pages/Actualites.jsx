@@ -222,7 +222,7 @@ const Actualites = () => {
     style={{ backgroundImage: `url('/ballon2.jpg')` }}
   >
     {/* Overlay pour améliorer la lisibilité */}
-    <div className="absolute inset-0 bg-gradient-to-br from-bambe-900/85 via-bambe-800/80 to-bambe-700/75"></div>
+    <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-700/80 to-blue-500/70 z-10"></div>
     
     {/* Effet de texture subtile */}
     <div className="absolute inset-0 opacity-20">

@@ -5048,6 +5048,8 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50">
       {/* Hero Section */}
+      
+{/*       
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-bambe-900/90 via-bambe-700/80 to-bambe-600/70 z-10" />
         
@@ -5186,7 +5188,77 @@ const Home = () => {
             </div>
           </div>
         </motion.div>
-      </section>
+      </section> */}
+
+
+
+<section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  {/* Blue overlay */}
+  <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-700/80 to-blue-500/70 z-10" />
+
+  {/* Background image */}
+  <div className="absolute inset-0">
+    <img
+      src="/bambe11.webp"
+      alt="AS Bambé de Moundou"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+  </div>
+
+  <div className="relative z-20 container mx-auto px-4 text-center">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+
+      <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 mb-8">
+        <img src="/bambelogo1.jpg" className="w-8 h-8 rounded-full" />
+        <span className="text-white font-semibold">Club Officiel depuis 2017</span>
+      </div>
+
+      <h1 className="text-5xl md:text-7xl xl:text-8xl font-black text-white mb-4">
+        AS BAMBÉ
+        <span className="block text-yellow-300 text-3xl md:text-5xl mt-2">
+          MOUNDOU
+        </span>
+      </h1>
+
+      <div className="h-1 w-28 mx-auto bg-gradient-to-r from-yellow-400 to-sky-500 rounded-full mb-8" />
+
+      <p className="text-xl text-white/90 max-w-3xl mx-auto mb-10">
+        La fierté du football tchadien méridional
+        <span className="block text-yellow-200 mt-2">
+          Plus qu'un club, une légende en construction
+        </span>
+      </p>
+
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Link
+          to="/actualites"
+          className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:to-yellow-700 text-gray-900 font-bold px-8 py-4 rounded-2xl shadow-xl"
+        >
+          Voir les actualités
+        </Link>
+        <Link
+          to="/club"
+          className="border-2 border-white text-white px-8 py-4 rounded-2xl hover:bg-white/10"
+        >
+          Découvrir le club
+        </Link>
+      </div>
+
+    </motion.div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Section Pourquoi AS Bambé ? */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
@@ -5282,7 +5354,7 @@ const Home = () => {
               </div>
               
               {/* Contenu Président */}
-              <div className="bg-gradient-to-br from-bambe-800 to-bambe-900 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 text-white md:col-span-2">
+              <div className="bg-gradient-to-br from-blue-950 via-blue-950 to-blue-950 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 text-white md:col-span-2">
                 <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
                   <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-3 sm:border-4 border-yellow-300">
                     <img 
@@ -5666,7 +5738,7 @@ const Home = () => {
 
       {/* Call to Action Final */}
       <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-bambe-900 via-bambe-800 to-bambe-900" />
+        <div className="absolute inset-0 bg-gradient-to-r from-sky-900 via-sky-900 to-sky-900" />
         
         <div className="absolute inset-0">
           {[...Array(8)].map((_, i) => (

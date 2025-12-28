@@ -76,52 +76,6 @@ const Equipe = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      
-{/*       
-      
-      
-      <section className="relative bg-gradient-to-br from-bambe-900 to-bambe-700 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <Users size={18} />
-              <span className="font-medium">Effectif 2024</span>
-            </div>
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Notre Équipe
-              <span className="block text-yellow-300">Première & Staff</span>
-            </h1>
-
-            <p className="text-xl text-bambe-100 mb-8 max-w-3xl mx-auto">
-              Découvrez les joueurs, l'encadrement technique et les statistiques
-              de l'AS Bambé pour la saison 2024.
-            </p>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-              {[
-                { value: "23", label: "Joueurs professionnels" },
-                { value: "8", label: "Membres du staff" },
-                { value: "15", label: "Matchs joués" },
-                { value: "9", label: "Victoires" }
-              ].map((stat, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                  <div className="text-2xl md:text-3xl font-bold text-yellow-300">{stat.value}</div>
-                  <div className="text-sm text-bambe-200 mt-1">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section> */}
-
-
-
       <section className="relative bg-gradient-to-br from-bambe-900/95 to-bambe-700/90 text-white overflow-hidden min-h-[70vh] flex items-center">
   {/* Background image pour la section Équipe */}
   <div 
@@ -129,7 +83,7 @@ const Equipe = () => {
     style={{ backgroundImage: `url('/bambe8.jpeg')` }}
   >
     {/* Overlay pour améliorer la lisibilité */}
-    <div className="absolute inset-0 bg-gradient-to-br from-bambe-900/80 via-bambe-800/75 to-bambe-700/70"></div>
+    <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-700/80 to-blue-500/70  z-10"></div>
     
     {/* Effet de texture subtile */}
     <div className="absolute inset-0 opacity-15">
@@ -152,7 +106,7 @@ const Equipe = () => {
         className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8 border border-white/30 shadow-lg"
       >
         <Users size={18} className="text-yellow-300" />
-        <span className="font-medium text-white">Effectif 2024</span>
+        <span className="font-medium text-white">Effectif 2025</span>
       </motion.div>
 
       <motion.h1
@@ -179,7 +133,7 @@ const Equipe = () => {
         className="text-xl text-white/90 mb-8 max-w-3xl mx-auto px-4 font-medium"
       >
         Découvrez les joueurs, l'encadrement technique et les statistiques
-        de l'AS Bambé pour la saison 2024.
+        de l'AS Bambé pour la saison 2025.
       </motion.p>
 
       <motion.div
@@ -213,17 +167,17 @@ const Equipe = () => {
         className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4"
       >
         <Link
-          to="/equipe/joueurs"
+          to="/contact"
           className="group bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto min-w-[200px] transform hover:scale-105"
         >
-          <span>Voir les Joueurs</span>
+          <span>Nous contacter</span>
           <Users className="group-hover:scale-110 transition-transform" size={18} />
         </Link>
         <Link
-          to="/equipe/staff"
+          to="/actualites"
           className="group border-2 border-white hover:bg-white/20 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base md:text-lg backdrop-blur-md transition-all w-full sm:w-auto min-w-[200px] transform hover:scale-105 flex items-center justify-center gap-2"
         >
-          <span>Le Staff Technique</span>
+          <span>Actualites</span>
           <Users className="group-hover:scale-110 transition-transform" size={18} />
         </Link>
       </motion.div>

@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock, Send, Handshake, Users, CheckCircle, Archive, MessageSquare, User, FileText, Instagram, Facebook, Twitter, Youtube, HelpCircle, ChevronDown, ChevronUp } from 'lucide-react';
+import { Mail, Phone, MessageSquare, Send, Users, CheckCircle, Instagram, Facebook, Twitter, Youtube, Clock, MapPin } from 'lucide-react';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const Contact = () => {
 
@@ -14,84 +13,55 @@ const Contact = () => {
     name: '',
     email: '',
     subject: '',
-    message: '',
-    category: 'general'
+    message: ''
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [expandedFaq, setExpandedFaq] = useState(null);
-
-  // Catégories de contact
-  const categories = [
-    { value: 'general', label: 'Question générale' },
-    { value: 'tickets', label: 'Billetterie' },
-    { value: 'partnership', label: 'Partenariat' },
-    { value: 'press', label: 'Presse & Médias' },
-    { value: 'supporters', label: 'Supporters & Clubs' },
-    { value: 'youth', label: 'Centre de Formation' }
-  ];
-
-  // FAQ
-  const faqs = [
-    {
-      question: "Comment acheter des billets pour les matchs de l'AS Bambé ?",
-      answer: "Les billets sont disponibles à la vente au Stade Municipal de Moundou une semaine avant chaque match. Vous pouvez également les acheter en ligne via notre site partenaire ou auprès des points de vente agréés en ville. Les prix varient selon la catégorie de places."
-    },
-    {
-      question: "Comment devenir membre officiel du club des supporters ?",
-      answer: "Pour devenir membre du club des supporters, remplissez le formulaire en ligne sur notre site ou présentez-vous au bureau des supporters au stade. La cotisation annuelle est de 5.000 FCFA et donne droit à des avantages exclusifs : places prioritaires, rencontres avec les joueurs, newsletters, etc."
-    },
-    {
-      question: "Quels sont les horaires d'ouverture du stade pour les visites ?",
-      answer: "Le Stade Municipal de Moundou est ouvert au public pour les visites :\n• Lundi au vendredi : 9h-12h et 14h-17h\n• Samedi : 9h-13h\n• Fermé le dimanche et jours fériés\nLes visites de groupes doivent être réservées à l'avance."
-    },
-    {
-      question: "Comment intégrer le centre de formation des jeunes ?",
-      answer: "Les sélections pour le centre de formation ont lieu chaque année en septembre. Les jeunes âgés de 12 à 17 ans peuvent s'inscrire via notre site ou se présenter aux dates de sélection. Un dossier complet (certificat médical, extrait de naissance, photos) est requis."
-    },
-    {
-      question: "Comment proposer un partenariat commercial avec le club ?",
-      answer: "Pour toute proposition de partenariat, merci d'envoyer un dossier détaillé à l'adresse partenariats@asbambe.td. Notre service commercial étudiera votre proposition et vous recontactera sous 15 jours ouvrés."
-    }
-  ];
 
   // Horaires d'ouverture
   const openingHours = [
     { day: "Lundi - Vendredi", hours: "9h00 - 18h00" },
     { day: "Samedi", hours: "9h00 - 13h00" },
     { day: "Dimanche", hours: "Fermé" },
-    { day: "Match jours", hours: "9h00 - Fin du match" }
+    { day: "Jour de match", hours: "9h00 - Fin du match" }
   ];
 
   // Équipes de contact
   const contactTeams = [
     {
-      department: "Billetterie & Accueil",
-      email: "billets@asbambe.td",
-      phone: "+235 66 12 34 56",
-      hours: "Lun-Ven: 9h-17h / Match jours: 9h-fin match"
-    },
-    {
-      department: "Communication & Presse",
-      email: "presse@asbambe.td",
-      phone: "+235 66 12 34 57",
+      department: "Contact Général",
+      email: "asbambefc@gmail.com",
+      phone: "+235 61 47 06 11",
       hours: "Lun-Ven: 9h-18h"
     },
     {
-      department: "Partnership & Sponsoring",
-      email: "partenariats@asbambe.td",
-      phone: "+235 66 12 34 58",
+      department: "Communication & Presse",
+      email: "asbambefc@gmail.com",
+      phone: "+235 61 47 06 11",
+      hours: "Lun-Ven: 9h-18h"
+    },
+    {
+      department: "Partenariats",
+      email: "asbambefc@gmail.com",
+      phone: "+235 61 47 06 11",
       hours: "Lun-Ven: 10h-17h"
     },
     {
       department: "Centre de Formation",
-      email: "formation@asbambe.td",
-      phone: "+235 66 12 34 59",
+      email: "asbambefc@gmail.com",
+      phone: "+235 61 47 06 11",
       hours: "Lun-Ven: 8h-16h"
     }
   ];
 
-  // Gestion du formulaire
+  // Réseaux sociaux
+  const socialMedia = [
+    { icon: <Instagram size={20} />, link: "#", label: "Instagram" },
+    { icon: <Facebook size={20} />, link: "#", label: "Facebook" },
+    { icon: <Twitter size={20} />, link: "#", label: "Twitter" },
+    { icon: <Youtube size={20} />, link: "#", label: "YouTube" }
+  ];
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -102,111 +72,54 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulation d'envoi
-    console.log('Formulaire soumis:', formData);
+    
+    // Construire le message WhatsApp
+    const whatsappMessage = 
+      `Nouveau message de contact AS Bambé%0A%0A` +
+      `Nom: ${formData.name}%0A` +
+      `Email: ${formData.email}%0A` +
+      `Sujet: ${formData.subject}%0A` +
+      `Message: ${formData.message}`;
+    
+    // Ouvrir WhatsApp avec le message pré-rempli
+    window.open(`https://wa.me/23561470611?text=${whatsappMessage}`, '_blank');
+    
+    // Simulation de succès
     setIsSubmitted(true);
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
 
-    // Réinitialiser après 5 secondes
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-        category: 'general'
-      });
-    }, 5000);
-  };
-
-  // Toggle FAQ
-  const toggleFaq = (index) => {
-    setExpandedFaq(expandedFaq === index ? null : index);
+    setTimeout(() => setIsSubmitted(false), 3000);
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
+      <section className="relative min-h-[70vh] flex items-center justify-center text-white overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+          style={{ backgroundImage: `url('/ballon.webp')` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-blue-700/80 to-blue-500/70 z-10"></div>
+        </div>
 
-      {/*       
-      
-      <section className="relative bg-gradient-to-br from-bambe-900 to-bambe-700 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
+        <div className="container mx-auto px-4 py-20 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-              <MessageSquare size={18} />
-              <span className="font-medium">Contact & Supporters</span>
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Contactez l'AS Bambé
-              <span className="block text-yellow-300">Restons Connectés</span>
-            </h1>
-            
-            <p className="text-xl text-bambe-100 mb-8 max-w-3xl mx-auto">
-              Questions, partenariats, billetterie ou simplement envie de nous soutenir ?
-              Notre équipe est à votre écoute pour répondre à toutes vos demandes.
-            </p>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-              {[
-                { value: "< 24h", label: "Temps de réponse" },
-                { value: "95%", label: "Satisfaction" },
-                { value: "7j/7", label: "Support match jours" },
-                { value: "4", label: "Équipes dédiées" }
-              ].map((stat, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
-                  <div className="text-2xl md:text-3xl font-bold text-yellow-300">{stat.value}</div>
-                  <div className="text-sm text-bambe-200 mt-1">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section> */}
-
-
-
-
-
-
-
-      <section className="relative min-h-[60vh] flex items-center justify-center text-white overflow-hidden">
-        {/* Background image pour la section Contact */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
-          style={{ backgroundImage: `url('/ballon.webp')` }}
-        >
-          {/* Overlay pour améliorer la lisibilité */}
-          <div className="absolute inset-0 bg-gradient-to-br from-bambe-900/85 via-bambe-800/80 to-bambe-700/75"></div>
-
-          {/* Effet de texture subtile */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute inset-0" style={{
-              backgroundImage: `radial-gradient(circle at 30% 35%, rgba(255,255,255,0.12) 0%, transparent 50%),
-                         radial-gradient(circle at 70% 65%, rgba(255,255,255,0.12) 0%, transparent 50%)`
-            }}></div>
-          </div>
-        </div>
-
-        <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="max-w-5xl mx-auto text-center"
-          >
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8 border border-white/30 shadow-lg"
+              className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-md rounded-full px-6 py-3 mb-8 border border-white/30 shadow-lg"
             >
-              <MessageSquare size={18} className="text-yellow-300" />
-              <span className="font-medium text-white">Contact & Supporters</span>
+              <MessageSquare size={20} className="text-blue-300" />
+              <span className="font-medium text-white">Contact & Support</span>
             </motion.div>
 
             <motion.h1
@@ -220,9 +133,9 @@ const Contact = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
-                className="block text-yellow-300 mt-2 text-2xl md:text-3xl lg:text-4xl"
+                className="block text-blue-300 mt-2 text-2xl md:text-3xl lg:text-4xl"
               >
-                Restons Connectés
+                Une équipe à votre écoute
               </motion.span>
             </motion.h1>
 
@@ -230,246 +143,18 @@ const Contact = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="text-xl text-white/90 mb-8 max-w-3xl mx-auto px-4 font-medium"
+              className="text-xl text-white/90 mb-8 max-w-2xl mx-auto px-4"
             >
-              Questions, partenariats, billetterie ou simplement envie de nous soutenir ?
-              Notre équipe est à votre écoute pour répondre à toutes vos demandes.
+              Questions, partenariats ou simplement envie de nous soutenir ?
+              Notre équipe est à votre disposition.
             </motion.p>
 
-            {/* Stats rapides améliorées */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-3xl mx-auto px-4"
-            >
-              {[
-                {
-                  value: "< 24h",
-                  label: "Temps de réponse",
-                  icon: "⏰",
-                  color: "text-green-300",
-                  bg: "from-green-500/20 to-green-600/20",
-                  border: "border-green-400/30"
-                },
-                {
-                  value: "95%",
-                  label: "Satisfaction",
-                  icon: "⭐",
-                  color: "text-yellow-300",
-                  bg: "from-yellow-500/20 to-yellow-600/20",
-                  border: "border-yellow-400/30"
-                },
-                {
-                  value: "7j/7",
-                  label: "Support match jours",
-                  icon: "⚽",
-                  color: "text-blue-300",
-                  bg: "from-blue-500/20 to-blue-600/20",
-                  border: "border-blue-400/30"
-                },
-                {
-                  value: "4",
-                  label: "Équipes dédiées",
-                  icon: "👥",
-                  color: "text-purple-300",
-                  bg: "from-purple-500/20 to-purple-600/20",
-                  border: "border-purple-400/30"
-                }
-              ].map((stat, index) => (
-                <div
-                  key={index}
-                  className={`bg-gradient-to-br ${stat.bg} backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-6 border ${stat.border} shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105`}
-                >
-                  <div className="text-3xl sm:text-4xl mb-2">{stat.icon}</div>
-                  <div className={`text-2xl sm:text-3xl md:text-4xl font-bold ${stat.color} mb-1`}>{stat.value}</div>
-                  <div className="text-sm sm:text-base text-white/80 font-medium">{stat.label}</div>
-                </div>
-              ))}
-            </motion.div>
-            {/* Coordonnées rapides */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.2 }}
-              className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto px-4"
-            >
-              <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <Phone className="text-yellow-300" size={18} />
-                <div className="text-left">
-                  <div className="text-sm text-white/60">Téléphone</div>
-                  <div className="text-white font-medium">+235 66 12 34 56</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <Mail className="text-yellow-300" size={18} />
-                <div className="text-left">
-                  <div className="text-sm text-white/60">Email</div>
-                  <div className="text-white font-medium">contact@asbambe.td</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <MapPin className="text-yellow-300" size={18} />
-                <div className="text-left">
-                  <div className="text-sm text-white/60">Stade</div>
-                  <div className="text-white font-medium">Stade Municipal</div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Note */}
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.4 }}
-              className="mt-6 text-sm text-white/60 max-w-2xl mx-auto px-4"
-            >
-              📞 Hotline matchs : +235 99 88 77 66 • 📧 Urgences : urgent@asbambe.td • ⏰ Bureau : 8h-18h
-            </motion.p>
           </motion.div>
         </div>
       </section>
 
-
-
-
-
-
-
-
-
-
-      {/* Informations de Contact */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Carte de localisation */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="lg:col-span-2"
-            >
-              <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg p-6 h-full">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-                  <MapPin className="mr-3 text-red-500" size={24} />
-                  Notre Localisation
-                </h2>
-
-                {/* Carte (simulée) */}
-                <div className="bg-gradient-to-br from-gray-200 to-gray-300 rounded-xl h-64 md:h-80 mb-6 flex items-center justify-center relative overflow-hidden">
-                  <div className="text-center">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-red-500 rounded-full flex items-center justify-center">
-                      <MapPin className="text-white" size={24} />
-                    </div>
-                    <p className="text-gray-700 font-medium">Stade Municipal de Moundou</p>
-                    <p className="text-gray-600">Logone Occidental, Tchad</p>
-                  </div>
-
-                  {/* Points d'intérêt */}
-                  <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-bambe-600 rounded-full border-4 border-white shadow-lg"></div>
-                  <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></div>
-                  <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-blue-500 rounded-full border-2 border-white"></div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-3">Adresse complète</h3>
-                    <p className="text-gray-600">
-                      Stade Municipal de Moundou<br />
-                      Quartier Centre<br />
-                      Moundou, Logone Occidental<br />
-                      République du Tchad
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-3">Accès</h3>
-                    <ul className="space-y-2 text-gray-600">
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                        Parking gratuit sur place
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                        Accessible aux personnes à mobilité réduite
-                      </li>
-                      <li className="flex items-center">
-                        <span className="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>
-                        Transport en commun : Lignes 1, 3, 5
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Infos Contact */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="space-y-6"
-            >
-              {/* Contact principal */}
-              <div className="bg-gradient-to-br from-bambe-600 to-bambe-700 text-white rounded-2xl shadow-lg p-6">
-                <h2 className="text-2xl font-bold mb-6">Contact Principal</h2>
-
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <Phone className="mt-1 flex-shrink-0" size={20} />
-                    <div>
-                      <div className="font-medium">Téléphone</div>
-                      <div className="text-bambe-200">+235 66 12 34 56</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-3">
-                    <Mail className="mt-1 flex-shrink-0" size={20} />
-                    <div>
-                      <div className="font-medium">Email général</div>
-                      <div className="text-bambe-200">contact@asbambe-moundou.td</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="mt-1 flex-shrink-0" size={20} />
-                    <div>
-                      <div className="font-medium">Adresse postale</div>
-                      <div className="text-bambe-200">BP 123, Moundou, Tchad</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Horaires */}
-              <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <Clock className="mr-3 text-bambe-600" size={24} />
-                  Horaires d'Ouverture
-                </h3>
-
-                <div className="space-y-3">
-                  {openingHours.map((item, index) => (
-                    <div key={index} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0">
-                      <span className="text-gray-700">{item.day}</span>
-                      <span className="font-medium text-gray-900">{item.hours}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-6 p-3 bg-yellow-50 rounded-lg">
-                  <p className="text-sm text-yellow-800">
-                    <span className="font-bold">Note :</span> Les horaires sont étendus les jours de match.
-                    Consultez notre calendrier pour plus de détails.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Formulaire de Contact */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -478,11 +163,10 @@ const Contact = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Envoyez-nous un Message
+                Envoyez-nous un message
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Remplissez le formulaire ci-dessous et notre équipe vous répondra
-                dans les plus brefs délais.
+                Remplissez le formulaire ci-dessous et nous vous répondrons via WhatsApp dans les plus brefs délais.
               </p>
             </motion.div>
 
@@ -490,37 +174,32 @@ const Contact = () => {
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="text-center bg-white rounded-2xl shadow-lg p-12"
+                className="text-center bg-white rounded-2xl shadow-lg p-12 border border-gray-200"
               >
-                <div className="w-20 h-20 mx-auto mb-6 bg-green-100 rounded-full flex items-center justify-center">
-                  <CheckCircle className="text-green-600" size={40} />
+                <div className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center">
+                  <CheckCircle className="text-blue-600" size={40} />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Message envoyé avec succès !
+                  Message prêt à être envoyé !
                 </h3>
-                <p className="text-gray-600 mb-6 max-w-md mx-auto">
-                  Merci pour votre message. Nous vous répondrons dans les 24 heures.
-                  En attendant, vous pouvez consulter notre FAQ ou nos réseaux sociaux.
+                <p className="text-gray-600 mb-6">
+                  Votre message va s'ouvrir dans WhatsApp. Veuillez l'envoyer pour finaliser votre demande.
                 </p>
-                <button
-                  onClick={() => setIsSubmitted(false)}
-                  className="text-bambe-600 hover:text-bambe-700 font-medium"
-                >
-                  Envoyer un autre message
-                </button>
+                <p className="text-sm text-gray-500">
+                  WhatsApp : +235 61 47 06 11
+                </p>
               </motion.div>
             ) : (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden"
+                className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden"
               >
                 <div className="p-8">
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          <User size={16} className="inline mr-2" />
+                        <label className="block text-sm font-semibold text-gray-700 mb-3">
                           Nom complet *
                         </label>
                         <input
@@ -529,14 +208,13 @@ const Contact = () => {
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bambe-500 focus:border-bambe-500 transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                           placeholder="Votre nom et prénom"
                         />
                       </div>
 
                       <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          <Mail size={16} className="inline mr-2" />
+                        <label className="block text-sm font-semibold text-gray-700 mb-3">
                           Adresse email *
                         </label>
                         <input
@@ -545,52 +223,29 @@ const Contact = () => {
                           value={formData.email}
                           onChange={handleChange}
                           required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bambe-500 focus:border-bambe-500 transition-colors"
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                           placeholder="votre@email.com"
                         />
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          <FileText size={16} className="inline mr-2" />
-                          Catégorie *
-                        </label>
-                        <select
-                          name="category"
-                          value={formData.category}
-                          onChange={handleChange}
-                          required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bambe-500 focus:border-bambe-500 transition-colors"
-                        >
-                          {categories.map((cat) => (
-                            <option key={cat.value} value={cat.value}>
-                              {cat.label}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-
-                      <div>
-                        <label className="block text-sm font-medium text-gray-700 mb-2">
-                          Sujet *
-                        </label>
-                        <input
-                          type="text"
-                          name="subject"
-                          value={formData.subject}
-                          onChange={handleChange}
-                          required
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bambe-500 focus:border-bambe-500 transition-colors"
-                          placeholder="Objet de votre message"
-                        />
-                      </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-gray-700 mb-3">
+                        Sujet *
+                      </label>
+                      <input
+                        type="text"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        required
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                        placeholder="Objet de votre message"
+                      />
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        <MessageSquare size={16} className="inline mr-2" />
+                      <label className="block text-sm font-semibold text-gray-700 mb-3">
                         Message *
                       </label>
                       <textarea
@@ -599,23 +254,25 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         rows={6}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-bambe-500 focus:border-bambe-500 transition-colors resize-none"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none"
                         placeholder="Décrivez votre demande en détail..."
                       ></textarea>
                     </div>
 
-                    <div className="flex items-center justify-between pt-6 border-t border-gray-200">
-                      <p className="text-sm text-gray-500">
-                        * Champs obligatoires. Nous traitons vos données avec confidentialité.
-                      </p>
+                    <div className="pt-6 border-t border-gray-200">
+                      <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <p className="text-sm text-gray-500 text-center sm:text-left">
+                          * Champs obligatoires. Nous traiterons votre demande avec WhatsApp.
+                        </p>
 
-                      <button
-                        type="submit"
-                        className="flex items-center space-x-2 bg-bambe-600 hover:bg-bambe-700 text-white font-bold px-8 py-3 rounded-lg transition-colors duration-300"
-                      >
-                        <Send size={18} />
-                        <span>Envoyer le message</span>
-                      </button>
+                        <button
+                          type="submit"
+                          className="flex items-center space-x-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+                        >
+                          <Send size={18} />
+                          <span>Envoyer via WhatsApp</span>
+                        </button>
+                      </div>
                     </div>
                   </form>
                 </div>
@@ -625,146 +282,179 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Équipes & FAQ */}
-      <section className="py-16 bg-white">
+      {/* Informations de Contact */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Équipes de contact */}
+            {/* Coordonnées */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
+              className="space-y-8"
             >
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">
-                Équipes Spécialisées
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  Nos Coordonnées
+                </h2>
+                
+                <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="bg-blue-100 p-3 rounded-lg">
+                        <Phone className="text-blue-600" size={20} />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-gray-900">Téléphone</h3>
+                        <p className="text-gray-600">+235 61 47 06 11</p>
+                        <p className="text-sm text-gray-500 mt-1">Disponible du lundi au vendredi</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="bg-blue-100 p-3 rounded-lg">
+                        <Mail className="text-blue-600" size={20} />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-gray-900">Email</h3>
+                        <p className="text-gray-600">asbambefc@gmail.com</p>
+                        <p className="text-sm text-gray-500 mt-1">Réponse sous 24h</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start space-x-4">
+                      <div className="bg-blue-100 p-3 rounded-lg">
+                        <MapPin className="text-blue-600" size={20} />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-gray-900">Adresse</h3>
+                        <p className="text-gray-600">Stade Municipal de Moundou</p>
+                        <p className="text-gray-600">Moundou, Tchad</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Horaires */}
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  Horaires d'Ouverture
+                </h2>
+                
+                <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                  <div className="space-y-4">
+                    {openingHours.map((item, index) => (
+                      <div key={index} className="flex justify-between items-center py-3 border-b border-gray-100 last:border-0">
+                        <span className="text-gray-700 font-medium">{item.day}</span>
+                        <span className="font-bold text-gray-900">{item.hours}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <p className="text-sm text-blue-800">
+                      <span className="font-bold">Note :</span> Horaires étendus les jours de match
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Équipes */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+            >
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                Équipes de Contact
               </h2>
 
-              <div className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {contactTeams.map((team, index) => (
                   <div
                     key={index}
-                    className="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors"
+                    className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow"
                   >
-                    <h3 className="font-bold text-gray-900 mb-3">{team.department}</h3>
-
-                    <div className="space-y-2">
-                      <div className="flex items-center text-sm text-gray-600">
-                        <Mail size={14} className="mr-2 flex-shrink-0" />
-                        <span className="truncate">{team.email}</span>
+                    <h3 className="font-bold text-gray-900 mb-4 text-lg">{team.department}</h3>
+                    
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <Mail size={16} className="text-blue-600 mr-3 flex-shrink-0" />
+                        <span className="text-gray-600 text-sm truncate">{team.email}</span>
                       </div>
-
-                      <div className="flex items-center text-sm text-gray-600">
-                        <Phone size={14} className="mr-2 flex-shrink-0" />
-                        <span>{team.phone}</span>
+                      
+                      <div className="flex items-center">
+                        <Phone size={16} className="text-blue-600 mr-3 flex-shrink-0" />
+                        <span className="text-gray-600 text-sm">{team.phone}</span>
                       </div>
-
-                      <div className="flex items-center text-sm text-gray-600">
-                        <Clock size={14} className="mr-2 flex-shrink-0" />
-                        <span>{team.hours}</span>
+                      
+                      <div className="flex items-center">
+                        <Clock size={16} className="text-blue-600 mr-3 flex-shrink-0" />
+                        <span className="text-gray-600 text-sm">{team.hours}</span>
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
-            </motion.div>
 
-            {/* FAQ */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-            >
-              <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
-                <HelpCircle className="mr-3 text-bambe-600" size={24} />
-                Questions Fréquentes
-              </h2>
-
-              <div className="space-y-4">
-                {faqs.map((faq, index) => (
-                  <div
-                    key={index}
-                    className="border border-gray-200 rounded-xl overflow-hidden"
-                  >
-                    <button
-                      onClick={() => toggleFaq(index)}
-                      className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
-                    >
-                      <span className="font-medium text-gray-900 pr-4">
-                        {faq.question}
-                      </span>
-                      {expandedFaq === index ? (
-                        <ChevronUp size={20} className="text-gray-500 flex-shrink-0" />
-                      ) : (
-                        <ChevronDown size={20} className="text-gray-500 flex-shrink-0" />
-                      )}
-                    </button>
-
-                    {expandedFaq === index && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="px-6 pb-6"
+              {/* Réseaux sociaux */}
+              <div className="mt-12">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  Suivez-nous
+                </h2>
+                
+                <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl shadow-lg p-6">
+                  <div className="flex justify-center space-x-6">
+                    {socialMedia.map((social, index) => (
+                      <a
+                        key={index}
+                        href={social.link}
+                        className="bg-white/20 hover:bg-white/30 backdrop-blur-sm w-12 h-12 rounded-full flex items-center justify-center transition-colors"
+                        aria-label={social.label}
                       >
-                        <p className="text-gray-600 whitespace-pre-line">
-                          {faq.answer}
-                        </p>
-                      </motion.div>
-                    )}
+                        {social.icon}
+                      </a>
+                    ))}
                   </div>
-                ))}
-              </div>
-
-              <div className="mt-8 p-6 bg-bambe-50 rounded-xl">
-                <p className="text-gray-700 mb-4">
-                  Vous n'avez pas trouvé la réponse à votre question ?
-                </p>
-                <button
-                  onClick={() => document.querySelector('form')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="text-bambe-600 hover:text-bambe-700 font-medium"
-                >
-                  Contactez-nous directement →
-                </button>
+                  <p className="text-center text-white/90 mt-6">
+                    Restez connecté avec l'AS Bambé sur les réseaux sociaux
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Devenir Supporter */}
+      {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              className="mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Rejoignez la Grande Famille des Supporters
-              </h2>
+        <div className="container mx-auto px-4 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-2xl mx-auto"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Supportez l'AS Bambé
+            </h2>
+            
+            <p className="text-xl text-gray-300 mb-8">
+              Rejoignez la grande famille des supporters et vivez l'aventure avec nous
+            </p>
 
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Soutenez activement l'AS Bambé et bénéficiez d'avantages exclusifs
-                en devenant membre officiel du club des supporters.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-                {[
-                  { title: "Places prioritaires", desc: "Accès avant-première aux billets" },
-                  { title: "Rencontres exclusives", desc: "Événements avec les joueurs" },
-                  { title: "Contenu VIP", desc: "Accès aux coulisses et interviews" }
-                ].map((benefit, index) => (
-                  <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                    <div className="text-xl font-bold mb-2">{benefit.title}</div>
-                    <div className="text-gray-300">{benefit.desc}</div>
-                  </div>
-                ))}
-              </div>
-
-              <button className="bg-white text-gray-900 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
-                Devenir supporter officiel
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button
+                onClick={() => window.open('https://wa.me/23561470611', '_blank')}
+                className="bg-white text-gray-900 hover:bg-gray-100 font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-3"
+              >
+                <MessageSquare size={20} />
+                <span>Nous contacter sur WhatsApp</span>
               </button>
-            </motion.div>
-          </div>
+              
+              <button className="bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300">
+                Voir les matchs
+              </button>
+            </div>
+          </motion.div>
         </div>
       </section>
     </div>
