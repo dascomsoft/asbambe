@@ -9,18 +9,18 @@ const Club = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Histoire du club - CORRIGÉ : Création en juin 2017
+  // Histoire du club - CORRIGÉ : Création en septembre 2023
   const history = [
     {
-      year: "2017",
+      year: "2023",
       title: "Naissance d'une Légende",
-      description: "Création de l'AS Bambé en juin 2017 par des visionnaires passionnés de Moundou.",
+      description: "Création de l'AS Bambé en septembre 2023 par des visionnaires passionnés de Moundou.",
       icon: <Sparkles className="text-yellow-500" />,
       color: "from-yellow-50 to-yellow-100",
       border: "border-yellow-200"
     },
     {
-      year: "2018",
+      year: "2024",
       title: "Premiers Pas",
       description: "Première saison officielle et intégration dans le championnat régional.",
       icon: <Flag className="text-green-500" />,
@@ -28,7 +28,7 @@ const Club = () => {
       border: "border-green-200"
     },
     {
-      year: "2019",
+      year: "2024",
       title: "L'Émergence",
       description: "Premiers succès en coupe régionale et structuration du club.",
       icon: <TrendingUp className="text-blue-500" />,
@@ -36,7 +36,7 @@ const Club = () => {
       border: "border-blue-200"
     },
     {
-      year: "2020",
+      year: "2024",
       title: "La Consolidation",
       description: "Renforcement de l'effectif et amélioration des infrastructures.",
       icon: <Building className="text-purple-500" />,
@@ -44,7 +44,7 @@ const Club = () => {
       border: "border-purple-200"
     },
     {
-      year: "2022",
+      year: "2024",
       title: "La Révélation",
       description: "Première finale de Coupe du Tchad, récompense d'un travail acharné.",
       icon: <Trophy className="text-bambe-600" />,
@@ -61,16 +61,15 @@ const Club = () => {
     }
   ];
 
-  // Palmarès - COULEURS AMÉLIORÉES
+  // Palmarès - COULEURS AMÉLIORÉES (ajusté pour 2023-2024)
   const achievements = [
     {
       title: "Championnat National",
       icon: <Trophy className="text-yellow-600" />,
       items: [
-        "3ème place - Saison 2023",
-        "4ème place - Saison 2022",
-        "5ème place - Saison 2021",
-        "Montée en D2 - 2019"
+        "Finaliste - Saison 2024",
+        "3ème place - Tournoi d'ouverture 2024",
+        "Montée rapide en compétitions"
       ],
       bgColor: "bg-gradient-to-br from-yellow-50 to-white",
       textColor: "text-gray-800",
@@ -81,9 +80,9 @@ const Club = () => {
       title: "Coupe du Tchad",
       icon: <Award className="text-blue-600" />,
       items: [
-        "Finaliste - Édition 2022",
-        "Demi-finaliste - Édition 2021",
-        "Quart de finaliste - 2020"
+        "Finaliste - Édition 2024",
+        "Performance remarquable dès la 1ère année",
+        "Reconnaissance nationale"
       ],
       bgColor: "bg-gradient-to-br from-blue-50 to-white",
       textColor: "text-gray-800",
@@ -94,9 +93,9 @@ const Club = () => {
       title: "Tournois Régionaux",
       icon: <Shield className="text-green-600" />,
       items: [
-        "Vainqueur Coupe du Logone - 2021",
-        "Finaliste Tournoi Inter-régional - 2020",
-        "Vainqueur Tournoi de l'Amitié - 2019"
+        "Vainqueur Tournoi de l'Amitié - 2024",
+        "Finaliste Coupe du Logone - 2024",
+        "Meilleur club débutant - 2024"
       ],
       bgColor: "bg-gradient-to-br from-green-50 to-white",
       textColor: "text-gray-800",
@@ -107,10 +106,10 @@ const Club = () => {
       title: "Distinctions Individuelles",
       icon: <Star className="text-purple-600" />,
       items: [
-        "Meilleur joueur - 2023",
-        "Meilleur buteur - 2022",
-        "Meilleur gardien - 2021",
-        "Prix du fair-play - 2023"
+        "Meilleur joueur - 2024",
+        "Meilleur buteur - 2024",
+        "Meilleur gardien - 2024",
+        "Prix du fair-play - 2024"
       ],
       bgColor: "bg-gradient-to-br from-purple-50 to-white",
       textColor: "text-gray-800",
@@ -199,139 +198,46 @@ const Club = () => {
     }
   ];
 
-  // Statistiques - CORRIGÉES pour 2017
+  // Statistiques - CORRIGÉES pour septembre 2023 (moins d'1 an d'existence)
+  const currentYear = new Date().getFullYear();
+  const creationYear = 2023;
+  const yearsSinceCreation = currentYear - creationYear;
+  const monthsSinceCreation = Math.min((currentYear - creationYear) * 12, 12); // Maximum 12 mois
+
   const stats = [
-    { number: "7", label: "Années d'existence", icon: <Calendar className="text-bambe-600" />, color: "from-bambe-100 to-white", textColor: "text-gray-800" },
-    { number: "45+", label: "Jeunes formés", icon: <Users className="text-green-600" />, color: "from-green-100 to-white", textColor: "text-gray-800" },
-    { number: "10K", label: "Capacité stade", icon: <Home className="text-yellow-600" />, color: "from-yellow-100 to-white", textColor: "text-gray-800" },
-    { number: "15", label: "Éducateurs diplômés", icon: <Layers className="text-blue-600" />, color: "from-blue-100 to-white", textColor: "text-gray-800" }
+    { 
+      number: `${monthsSinceCreation}+`, 
+      label: "Mois d'existence", 
+      icon: <Calendar className="text-bambe-600" />, 
+      color: "from-bambe-100 to-white", 
+      textColor: "text-gray-800" 
+    },
+    { 
+      number: "30+", 
+      label: "Jeunes formés", 
+      icon: <Users className="text-green-600" />, 
+      color: "from-green-100 to-white", 
+      textColor: "text-gray-800" 
+    },
+    { 
+      number: "10K", 
+      label: "Capacité stade", 
+      icon: <Home className="text-yellow-600" />, 
+      color: "from-yellow-100 to-white", 
+      textColor: "text-gray-800" 
+    },
+    { 
+      number: "12", 
+      label: "Éducateurs diplômés", 
+      icon: <Layers className="text-blue-600" />, 
+      color: "from-blue-100 to-white", 
+      textColor: "text-gray-800" 
+    }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50">
       {/* Hero Section - DATE CORRIGÉE */}
-      
-      
-{/*       
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-[120px] pb-[120px]">
-        <div className="absolute inset-0 bg-gradient-to-br from-bambe-900 via-bambe-800 to-bambe-700 z-10" />
-        
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 0%, transparent 50%),
-                             radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1) 0%, transparent 50%)`
-          }}></div>
-        </div>
-
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="max-w-6xl mx-auto"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8 border border-white/20"
-            >
-              <Sparkles className="text-yellow-300" size={18} />
-              <span className="text-white font-semibold text-sm sm:text-base">CRÉÉ EN JUIN 2017</span>
-            </motion.div>
-            
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-white mb-4 sm:mb-6 leading-tight"
-            >
-              <span className="block">AS BAMBÉ</span>
-              <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className="block text-yellow-300 mt-1 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
-              >
-                L'ÉLAN VERT DU TCHAD
-              </motion.span>
-            </motion.h1>
-            
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-              className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-10 font-medium leading-relaxed"
-            >
-              Depuis 2017, nous écrivons l'histoire du football tchadien
-              <span className="block mt-2 text-yellow-200/90 text-base sm:text-lg md:text-xl">
-                Une ascension fulgurante, une passion partagée
-              </span>
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
-              className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto"
-            >
-              {stats.map((stat, index) => (
-                <div key={index} className={`bg-gradient-to-br ${stat.color} backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 text-center border border-white/30 shadow-lg`}>
-                  <div className="flex justify-center mb-1 sm:mb-2">
-                    <div className="scale-75 sm:scale-90">
-                      {stat.icon}
-                    </div>
-                  </div>
-                  <div className={`text-xl sm:text-2xl md:text-3xl font-bold ${stat.textColor} mb-0.5 sm:mb-1`}>{stat.number}</div>
-                  <div className="text-xs sm:text-sm text-gray-700">{stat.label}</div>
-                </div>
-              ))}
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1 }}
-              className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center"
-            >
-              <Link
-                to="/article/vision-2026"
-                className="group bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base md:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto min-w-[180px] transform hover:scale-105"
-              >
-                <span>Notre Vision 2026</span>
-                <Target className="group-hover:scale-110 transition-transform" size={18} />
-              </Link>
-              <Link
-                to="/equipe"
-                className="group border-2 border-white hover:bg-white/20 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base md:text-lg backdrop-blur-sm transition-all w-full sm:w-auto min-w-[180px] transform hover:scale-105 flex items-center justify-center gap-2"
-              >
-                <span>Découvrir l'Équipe</span>
-                <Users className="group-hover:scale-110 transition-transform" size={18} />
-              </Link>
-            </motion.div>
-          </motion.div>
-        </div>
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-          className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-20"
-        >
-          <div className="text-white/70 text-xs sm:text-sm flex flex-col items-center">
-            <span className="mb-1 sm:mb-2">Explorer</span>
-            <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-white/50 rounded-full flex justify-center items-start pt-1 sm:pt-2">
-              <motion.div
-                animate={{ y: [0, 6, 0] }}
-                transition={{ repeat: Infinity, duration: 1.5 }}
-                className="w-1 h-2 sm:h-3 bg-white rounded-full"
-              />
-            </div>
-          </div>
-        </motion.div>
-      </section> */}
-
-
-
-
-
-
 
 <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-[120px] pb-[120px]">
   {/* Background image avec overlay gradient */}
@@ -364,7 +270,7 @@ const Club = () => {
         className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8 border border-white/30 shadow-lg"
       >
         <Sparkles className="text-yellow-300" size={18} />
-        <span className="text-white font-semibold text-sm sm:text-base">CRÉÉ EN JUIN 2017</span>
+        <span className="text-white font-semibold text-sm sm:text-base">CRÉÉ EN SEPTEMBRE 2023</span>
       </motion.div>
       
       <motion.h1
@@ -380,7 +286,7 @@ const Club = () => {
           transition={{ delay: 0.5 }}
           className="block text-yellow-300 mt-1 sm:mt-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"
         >
-          L'ÉLAN VERT DU TCHAD
+          L'ASCENSION FULGURANTE
         </motion.span>
       </motion.h1>
       
@@ -390,9 +296,9 @@ const Club = () => {
         transition={{ delay: 0.6 }}
         className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-6 sm:mb-8 md:mb-10 font-medium leading-relaxed text-center px-4"
       >
-        Depuis 2017, nous écrivons l'histoire du football tchadien
+        Depuis septembre 2023, nous écrivons une nouvelle histoire du football tchadien
         <span className="block mt-2 text-yellow-200/90 text-base sm:text-lg md:text-xl font-bold">
-          Une ascension fulgurante, une passion partagée
+          Un début exceptionnel, une passion dévorante
         </span>
       </motion.p>
 
@@ -460,15 +366,7 @@ const Club = () => {
   </motion.div>
 </section>
 
-
-
-
-
-
-
-
-
-      {/* Histoire Timeline - DATE CORRIGÉE */}
+{/* Histoire Timeline - DATE CORRIGÉE */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-white via-gray-50 to-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -483,11 +381,11 @@ const Club = () => {
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-4 sm:mb-6 leading-tight">
               <span className="bg-gradient-to-r from-bambe-600 via-yellow-500 to-bambe-600 bg-clip-text text-transparent">
-                7 Ans d'Histoire & de Passion
+                Une Ascension Exceptionnelle
               </span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
-              Depuis 2017, chaque année écrit un nouveau chapitre de notre légende
+              En quelques mois seulement, une histoire déjà riche en succès
             </p>
           </motion.div>
 
@@ -595,7 +493,7 @@ const Club = () => {
               </span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
-              En 7 ans seulement, un héritage qui inspire les générations futures
+              En quelques mois seulement, un début exceptionnellement riche
             </p>
           </motion.div>
 
@@ -621,7 +519,7 @@ const Club = () => {
                     <h3 className="text-lg sm:text-xl font-bold text-gray-900">{category.title}</h3>
                   </div>
                   <span className={`px-2 sm:px-3 py-1 rounded-full text-xs font-bold ${category.badgeColor}`}>
-                    {category.items.length} TITRES
+                    {category.items.length} SUCCÈS
                   </span>
                 </div>
 
@@ -640,7 +538,7 @@ const Club = () => {
                 {/* Lien vers détails */}
                 <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-gray-200">
                   <div className="flex items-center text-bambe-600 hover:text-bambe-700 font-medium text-xs sm:text-sm cursor-pointer">
-                    <span>Voir tous les titres</span>
+                    <span>Voir tous les succès</span>
                     <ChevronRight className="ml-1 group-hover:translate-x-1 transition-transform" size={14} />
                   </div>
                 </div>
@@ -656,13 +554,13 @@ const Club = () => {
             className="mt-8 sm:mt-12 md:mt-16"
           >
             <div className="bg-gradient-to-r from-bambe-50 to-yellow-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border border-bambe-200 shadow-lg">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">En Chiffres</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">En Chiffres (2023-2024)</h3>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
                 {[
-                  { label: "Matchs joués", value: "180+", color: "text-bambe-700" },
-                  { label: "Buts marqués", value: "350+", color: "text-green-700" },
-                  { label: "Clean sheets", value: "65+", color: "text-blue-700" },
-                  { label: "Supporters", value: "10,000+", color: "text-yellow-700" }
+                  { label: "Matchs joués", value: "40+", color: "text-bambe-700" },
+                  { label: "Buts marqués", value: "85+", color: "text-green-700" },
+                  { label: "Clean sheets", value: "15+", color: "text-blue-700" },
+                  { label: "Supporters", value: "8,000+", color: "text-yellow-700" }
                 ].map((stat, i) => (
                   <div key={i} className="text-center">
                     <div className={`text-2xl sm:text-3xl md:text-4xl font-bold ${stat.color} mb-1`}>{stat.value}</div>
@@ -747,8 +645,8 @@ const Club = () => {
                   <QuoteIcon className="w-6 h-6 text-white" />
                 </div>
                 <blockquote className="text-lg sm:text-xl md:text-2xl font-bold italic mb-4 sm:mb-6 text-white">
-                  "En seulement 7 ans, nous avons prouvé qu'avec la passion, le travail et la vision, 
-                  on peut écrire l'histoire. L'AS Bambé n'est pas qu'un club, c'est une promesse d'avenir."
+                  "En seulement quelques mois, nous avons prouvé qu'avec la passion, le travail et la vision, 
+                  on peut accomplir des miracles. L'AS Bambé n'est pas qu'un club, c'est une promesse d'avenir."
                 </blockquote>
                 <div className="text-yellow-300 font-bold">— Philosophie AS Bambé</div>
               </div>
@@ -857,7 +755,7 @@ const Club = () => {
                     { label: "Capacité", value: "10,000 places", icon: "👥", color: "text-bambe-600" },
                     { label: "Surface", value: "Synthétique FIFA", icon: "⚽", color: "text-green-600" },
                     { label: "Éclairage", value: "Nocturne LED", icon: "💡", color: "text-yellow-600" },
-                    { label: "Vestiaires", value: "Modernisés 2020", icon: "🚿", color: "text-blue-600" }
+                    { label: "Vestiaires", value: "Modernisés 2024", icon: "🚿", color: "text-blue-600" }
                   ].map((item, i) => (
                     <div key={i} className="flex items-center justify-between p-3 bg-white rounded-lg border border-gray-200 shadow-sm">
                       <div className="flex items-center gap-2 sm:gap-3">
@@ -884,10 +782,10 @@ const Club = () => {
 
                 <div className="grid grid-cols-2 gap-3 sm:gap-4">
                   {[
-                    { label: "Jeunes formés", value: "45+", color: "text-blue-700" },
-                    { label: "Éducateurs", value: "15", color: "text-green-700" },
-                    { label: "Terrains", value: "3", color: "text-yellow-700" },
-                    { label: "Promotions", value: "7", color: "text-purple-700" }
+                    { label: "Jeunes formés", value: "30+", color: "text-blue-700" },
+                    { label: "Éducateurs", value: "12", color: "text-green-700" },
+                    { label: "Terrains", value: "2", color: "text-yellow-700" },
+                    { label: "Promotions", value: "1", color: "text-purple-700" }
                   ].map((stat, i) => (
                     <div key={i} className="text-center bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
                       <div className={`text-2xl sm:text-3xl font-bold ${stat.color} mb-1`}>{stat.value}</div>
@@ -964,7 +862,7 @@ const Club = () => {
               transition={{ delay: 0.2 }}
               className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 md:mb-10 lg:mb-12 max-w-3xl mx-auto text-white/90 leading-relaxed"
             >
-              En seulement 7 ans, nous avons révolutionné le football tchadien. 
+              En seulement quelques mois, nous avons révolutionné le football tchadien. 
               Maintenant, nous visons l'excellence continentale.
             </motion.p>
 
