@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
             
             <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              La fierté du football tchadien depuis 2017. Plus qu'un club, une institution au service du développement sportif et social.
+              La fierté du football tchadien depuis 2023. Plus qu'un club, une institution au service du développement sportif et social.
             </p>
 
             <div className="space-y-3 pt-2">

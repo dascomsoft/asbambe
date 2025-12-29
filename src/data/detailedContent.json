@@ -558,8 +558,7 @@
             "content": "En 2023, quand Rangar Masra Abel lance l'AS Bambé, beaucoup doutent. Aujourd'hui, le doute s'est transformé en admiration. Celui qu'on surnomme 'Le Visionnaire Vert' a non seulement créé un club, mais a instauré une véritable institution sportive. Sans jamais dévoiler sa vie privée, Rangar a choisi de laisser parler ses actes : la création d'une académie de football d'excellence, la transformation du paysage sportif de Moundou, et la construction d'un modèle économique viable pour le sport tchadien. Sa philosophie ? 'Les actions parlent plus fort que les diplômes, et les résultats plus fort que les titres'.",
             "images": [
                 "/president1.jpeg",
-                "/president2.jpg",
-                "/president3.jpg"
+                "/president2.jpg"
             ],
             "stats": [
                 {
@@ -636,12 +635,10 @@
         }
     ],
     "gallery": [
-        "/president1.jpeg",
-        "/president2.jpg",
-        "/president3.jpg",
-        "/president4.jpg",
-        "/president5.jpg",
-        "/president6.jpg"
+       
+        "/respect.jpg",
+        "/fraternite.jpg"
+        
     ],
     "testimonials": [
         {
