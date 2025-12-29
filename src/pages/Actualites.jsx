@@ -1626,6 +1626,22 @@ const Actualites = () => {
       featured: true,
       tags: ["Victoire", "Extérieur", "AS Santé Abéché", "1-0", "Préparation Saison"]
     },
+
+    {
+  "id": 4,
+  "title": "DJERABÉ NESTOR PRÉSÉLECTIONNÉ EN ÉQUIPE NATIONALE DU TCHAD : LA FIERTÉ DE L'AS BAMBÉ !",
+  "excerpt": "Le jeune joueur de l'AS Bambé, DJERABÉ Nestor, a été présélectionné avec les Sao du Tchad. Une récompense méritée pour ce talent formé au club et une preuve éclatante de la qualité de la formation des Verts.",
+  "content": "...",
+  "category": "Sélection Nationale",
+  "date": "Mars 2025",
+  "author": "Rédaction AS Bambé",
+  "readTime": "8 min",
+  "views": 3150,
+  "comments": 89,
+  "image": "/nestor.jpeg",
+  "featured": true,
+  "tags": ["Présélection", "Équipe Nationale Tchad", "Formation Locale", "AS Bambé"]
+},
     // {
     //   id: 3,
     //   title: "Victoire historique 3-0 contre l'AS CotonTchad",
