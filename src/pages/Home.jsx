@@ -121,7 +121,7 @@ const Home = () => {
       date: "Décembre 2025",
       excerpt: "Le club dévoile son ambitieux plan de développement sur 3 ans : formation des jeunes, modernisation des infrastructures et renforcement de l'équipe première.",
       category: "Stratégie",
-      image: "/bambe5.jpeg",
+      image: "/equipe18.jpg",
       readTime: "4 min",
       highlight: true,
       link: "/article/vision-2026"
@@ -132,7 +132,7 @@ const Home = () => {
       date: "2025",
       excerpt: "Portrait du président qui insuffle une nouvelle dynamique au club. Rencontre exclusive avec l'homme qui redéfinit l'avenir du football à Moundou.",
       category: "Portrait",
-      image: "/president1.jpeg",
+      image: "/president2.jpg",
       readTime: "5 min",
       highlight: true,
       link: "/article/rangar-masra-abel"
@@ -541,7 +541,7 @@ const Home = () => {
               >
                 <div className="relative h-56 sm:h-64 md:h-72 overflow-hidden">
                   <img
-                    src="/bambe1.jpeg"
+                    src="/stafftechnique.jpg"
                     alt="AS Bambé au Cameroun"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -659,7 +659,7 @@ const Home = () => {
               </div>
               
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
-                {['/bambe7.jpeg', '/bambe8.jpeg', '/bambe9.jpeg', '/bambe5.jpeg'].map((img, i) => (
+                {['/pico.jpeg', '/pico1.jpeg', '/pico2.jpeg', '/pico3.jpeg'].map((img, i) => (
                   <motion.div
                     key={i}
                     whileHover={{ scale: 1.03 }}
